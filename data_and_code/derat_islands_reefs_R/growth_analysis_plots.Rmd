@@ -1,0 +1,313 @@
+---
+title: "R Notebook: C. sordidus growth analyses"
+output: html_notebook
+editor_options: 
+  chunk_output_type: inline
+---
+
+
+#Step 0: Load packages
+```{r}
+library(tidyverse)
+library(brms)
+library(tidybayes)
+library(modelr) #for data_grid function
+library(bayesplot)
+library(gridExtra)
+library(cowplot) #for plots
+
+```
+
+
+##Load files
+```{r}
+growth_dat<-read.csv("damselfish_age_length.csv") ###MAY 14 - EDITED SPECIES BC SPELLING ERROR
+str(growth_dat)
+
+#log length
+growth_dat<-
+  growth_dat%>% 
+  mutate(llength=log(TL_cm))
+
+
+#create new reduced dataframe (eliminate S fas from Lys and P lac from JDN) so within each island species are consistent
+growth_dat3<-
+  growth_dat  %>% 
+  filter(!(Species == "Stegastes fasciolatus" & Island =="Ile du Lys"))  %>% 
+  filter(!(Species == "Plectroglyphidodon lacrymatus" & Island =="Juan de Nova")) 
+
+growth_dat3 %>% 
+  group_by(Island, Species) %>% 
+  count() 
+
+```
+
+
+##Final model - Linf and K vary
+```{r}
+###create a lot of indicator variables:
+levels(growth_dat3$Island)
+growth_dat3<-
+  growth_dat3 %>%
+  mutate(in_e = ifelse(Island=="Europa", 1, 0),
+         in_g = ifelse(Island=="Grande Glorieuse", 1, 0),
+         in_l = ifelse(Island=="Ile du Lys", 1, 0),
+         in_j = ifelse(Island=="Juan de Nova", 1, 0),
+         in_t = ifelse(Island=="Tromelin", 1, 0))
+
+###set prior
+gr_prior_fe3<- c(
+  prior(uniform(11, 22), nlpar = "Linf", lb = 11, ub = 22), 
+  prior(uniform(0,2), nlpar = "K", lb=0, ub = 2), ###don't constrain really
+  prior(uniform(0, 7), nlpar = "L0", lb = 0, ub = 7), ###L0 constrained to approx min length observed
+  prior(normal(0, .5), nlpar = "K1"), ###don't constrain really
+  prior(normal(0, .5), nlpar = "K2"), ###don't constrain really
+  prior(normal(0, .5), nlpar = "K3"), ###don't constrain really
+  prior(normal(0, .5), nlpar =  "K4"), ###don't constrain really
+  prior(normal(0, .5), nlpar =  "K5"), ###don't constrain really
+  prior(normal(0, 5), nlpar = "Linf1"), ###don't constrain really
+  prior(normal(0, 5), nlpar = "Linf2"), ###don't constrain really
+  prior(normal(0, 5), nlpar =  "Linf3"), ###don't constrain really
+  prior(normal(0, 5), nlpar =  "Linf4"), ###don't constrain really
+  prior(normal(0, 5), nlpar =  "Linf5") ###don't constrain really
+)
+
+
+growth_mod_isl_nosp <- 
+  brm(
+    bf(
+      llength ~ log((Linf + Linf5*in_e+Linf1*in_g+Linf2*in_l+Linf3*in_j+Linf4*in_t)-((Linf + Linf5*in_e+Linf1*in_g+Linf2*in_l+Linf3*in_j+Linf4*in_t)-L0)*
+                      exp(-(K + K5*in_e+K1*in_g+K2*in_l+K3*in_j+K4*in_t)*AgeFinal)),
+      Linf~1, Linf1~1, Linf2~1, Linf3~1, Linf4~1, Linf5~1, K~1, K1~1, K2~1, K3~1, K4~1,K5 ~1, L0~1,
+      nl=TRUE),
+    data = growth_dat3, family = gaussian,
+    prior = gr_prior_fe3,
+     iter = 3000, warmup = 1000, chains = 4, cores = 4, 
+    control = list(adapt_delta = 0.999, max_treedepth=15), 
+    sample_prior=TRUE,
+     file = "growth_mod_isl_nosp"
+  )
+print(growth_mod_isl_nosp) 
+pp_check(growth_mod_isl_nosp)
+plot(growth_mod_isl_nosp)
+
+
+```
+
+
+####hypothesis tests
+```{r}
+####based on a prior hypotheses (rat-eradicated = rat-eradicated, rat-infested = rat-infested, rat-eradicated > rat-infested)
+hypothesis(growth_mod_isl_nosp, c("K2_Intercept > K1_Intercept",  ##Lys should be > Grand Glo
+                                    "K2_Intercept > K3_Intercept", ###Lys should be > JDN
+                                    "K2_Intercept > K5_Intercept", ###Lys should be > Europa
+                                   "K4_Intercept > K1_Intercept",  ##Trom should be > Grand Glo
+                                    "K4_Intercept > K3_Intercept", ###Trom should be > JDN
+                                    "K4_Intercept > K5_Intercept", ###Trom should be > Europa
+                                    "K2_Intercept = K4_Intercept", ###Lys should = Trom
+                                    "K1_Intercept = K3_Intercept", ###Grand Glo should = JDN
+                                    "K1_Intercept = K5_Intercept", ###Grand Glo should = Europa
+                                     "K3_Intercept = K5_Intercept" ####JDN should = Europa
+                                    )) 
+
+
+hypothesis(growth_mod_isl_nosp, c("Linf2_Intercept > Linf1_Intercept",  ##Lys should be > Grand Glo
+                                    "Linf2_Intercept > Linf3_Intercept", ###Lys should be > JDN
+                                    "Linf2_Intercept > Linf5_Intercept", ###Lys should be > Europa
+                                   "Linf4_Intercept > Linf1_Intercept",  ##Trom should be > Grand Glo
+                                    "Linf4_Intercept > Linf3_Intercept", ###Trom should be > JDN
+                                    "Linf4_Intercept > Linf5_Intercept", ###Trom should be > Europa
+                                    "Linf2_Intercept = Linf4_Intercept", ###Lys should = Trom
+                                    "Linf1_Intercept = Linf3_Intercept", ###Grand Glo should = JDN
+                                    "Linf1_Intercept = Linf5_Intercept", ###Grand Glo should = Europa
+                                     "Linf3_Intercept = Linf5_Intercept" ####JDN should = Europa
+                                    )) 
+
+
+```
+
+
+
+###plot K, Linf
+```{r}
+
+####95
+eur_post_95<-
+growth_mod_isl_nosp %>%
+  spread_draws(b_Linf_Intercept, b_Linf1_Intercept, b_Linf2_Intercept, b_Linf3_Intercept, b_Linf4_Intercept, b_Linf5_Intercept,
+               b_K_Intercept, b_K1_Intercept, b_K2_Intercept, b_K3_Intercept, b_K4_Intercept, b_K5_Intercept) %>%
+   median_hdi(Linf = b_Linf_Intercept + b_Linf5_Intercept,
+              K = b_K_Intercept + b_K5_Intercept) %>%
+    mutate(Island = as.factor("Europa"),
+           level=95)
+
+glo_post_95<-
+growth_mod_isl_nosp %>%
+  spread_draws(b_Linf_Intercept, b_Linf1_Intercept, b_Linf2_Intercept, b_Linf3_Intercept, b_Linf4_Intercept, b_Linf5_Intercept,
+               b_K_Intercept, b_K1_Intercept, b_K2_Intercept, b_K3_Intercept, b_K4_Intercept, b_K5_Intercept) %>%
+   median_hdi(Linf = b_Linf_Intercept + b_Linf1_Intercept,
+              K = b_K_Intercept + b_K1_Intercept) %>%
+    mutate(Island = as.factor("Grand Glor"),
+           level=95)
+
+lys_post_95<-
+growth_mod_isl_nosp %>%
+  spread_draws(b_Linf_Intercept, b_Linf1_Intercept, b_Linf2_Intercept, b_Linf3_Intercept, b_Linf4_Intercept, b_Linf5_Intercept,
+               b_K_Intercept, b_K1_Intercept, b_K2_Intercept, b_K3_Intercept, b_K4_Intercept, b_K5_Intercept) %>%
+   median_hdi(Linf = b_Linf_Intercept + b_Linf2_Intercept,
+              K = b_K_Intercept + b_K2_Intercept) %>%
+    mutate(Island = as.factor("Ile du Lys"),
+           level=95)
+
+jdn_post_95<-
+growth_mod_isl_nosp %>%
+  spread_draws(b_Linf_Intercept, b_Linf1_Intercept, b_Linf2_Intercept, b_Linf3_Intercept, b_Linf4_Intercept, b_Linf5_Intercept,
+               b_K_Intercept, b_K1_Intercept, b_K2_Intercept, b_K3_Intercept, b_K4_Intercept, b_K5_Intercept) %>%
+   median_hdi(Linf = b_Linf_Intercept + b_Linf3_Intercept,
+              K = b_K_Intercept + b_K3_Intercept) %>%
+    mutate(Island = as.factor("Juan de Nova"),
+           level=95)
+
+trom_post_95<-
+growth_mod_isl_nosp %>%
+  spread_draws(b_Linf_Intercept, b_Linf1_Intercept, b_Linf2_Intercept, b_Linf3_Intercept, b_Linf4_Intercept, b_Linf5_Intercept,
+               b_K_Intercept, b_K1_Intercept, b_K2_Intercept, b_K3_Intercept, b_K4_Intercept, b_K5_Intercept) %>%
+   median_hdi(Linf = b_Linf_Intercept + b_Linf4_Intercept,
+              K = b_K_Intercept + b_K4_Intercept) %>%
+    mutate(Island = as.factor("Tromelin"),
+           level=95)
+
+all_post_95<-rbind(eur_post_95, jdn_post_95, glo_post_95,lys_post_95, trom_post_95)
+
+
+
+###75
+eur_post_75<-
+growth_mod_isl_nosp %>%
+  spread_draws(b_Linf_Intercept, b_Linf1_Intercept, b_Linf2_Intercept, b_Linf3_Intercept, b_Linf4_Intercept, b_Linf5_Intercept,
+               b_K_Intercept, b_K1_Intercept, b_K2_Intercept, b_K3_Intercept, b_K4_Intercept, b_K5_Intercept) %>%
+   median_hdi(Linf = b_Linf_Intercept + b_Linf5_Intercept,
+              K = b_K_Intercept + b_K5_Intercept, .width=.75) %>%
+    mutate(Island = as.factor("Europa"),
+           level=75)
+
+glo_post_75<-
+growth_mod_isl_nosp %>%
+  spread_draws(b_Linf_Intercept, b_Linf1_Intercept, b_Linf2_Intercept, b_Linf3_Intercept, b_Linf4_Intercept, b_Linf5_Intercept,
+               b_K_Intercept, b_K1_Intercept, b_K2_Intercept, b_K3_Intercept, b_K4_Intercept, b_K5_Intercept) %>%
+   median_hdi(Linf = b_Linf_Intercept + b_Linf1_Intercept,
+              K = b_K_Intercept + b_K1_Intercept, .width=.75) %>%
+    mutate(Island = as.factor("Grand Glor"),
+           level=75)
+
+lys_post_75<-
+growth_mod_isl_nosp %>%
+  spread_draws(b_Linf_Intercept, b_Linf1_Intercept, b_Linf2_Intercept, b_Linf3_Intercept, b_Linf4_Intercept, b_Linf5_Intercept,
+               b_K_Intercept, b_K1_Intercept, b_K2_Intercept, b_K3_Intercept, b_K4_Intercept, b_K5_Intercept) %>%
+   median_hdi(Linf = b_Linf_Intercept + b_Linf2_Intercept,
+              K = b_K_Intercept + b_K2_Intercept, .width=.75) %>%
+    mutate(Island = as.factor("Ile du Lys"),
+           level=75)
+
+jdn_post_75<-
+growth_mod_isl_nosp %>%
+  spread_draws(b_Linf_Intercept, b_Linf1_Intercept, b_Linf2_Intercept, b_Linf3_Intercept, b_Linf4_Intercept, b_Linf5_Intercept,
+               b_K_Intercept, b_K1_Intercept, b_K2_Intercept, b_K3_Intercept, b_K4_Intercept, b_K5_Intercept) %>%
+   median_hdi(Linf = b_Linf_Intercept + b_Linf3_Intercept,
+              K = b_K_Intercept + b_K3_Intercept, .width=.75) %>%
+    mutate(Island = as.factor("Juan de Nova"),
+           level=75)
+
+trom_post_75<-
+growth_mod_isl_nosp %>%
+  spread_draws(b_Linf_Intercept, b_Linf1_Intercept, b_Linf2_Intercept, b_Linf3_Intercept, b_Linf4_Intercept, b_Linf5_Intercept,
+               b_K_Intercept, b_K1_Intercept, b_K2_Intercept, b_K3_Intercept, b_K4_Intercept, b_K5_Intercept) %>%
+   median_hdi(Linf = b_Linf_Intercept + b_Linf4_Intercept,
+              K = b_K_Intercept + b_K4_Intercept, .width=.75) %>%
+    mutate(Island = as.factor("Tromelin"),
+           level=75)
+
+all_post_75<-rbind(eur_post_75, jdn_post_75, glo_post_75,lys_post_75, trom_post_75)
+
+
+all_post<-rbind(all_post_95, all_post_75)
+
+plot_klinf<-ggplot(all_post, aes(x = Linf, y = K, color = Island, fill = Island, shape = Island, alpha = 0.9))+
+ geom_errorbarh(data=filter(all_post, level==95), aes(xmin = Linf.lower, xmax = Linf.upper), height=0, size=1) +
+geom_errorbar(data=filter(all_post, level==95),aes(ymin = K.lower, ymax = K.upper),  width=0, size=1) +
+   geom_errorbarh(data=filter(all_post, level==75), aes(xmin = Linf.lower, xmax = Linf.upper), height=0, size=2) +
+geom_errorbar(data=filter(all_post, level==75),aes(ymin = K.lower, ymax = K.upper),  width=0, size=2) +
+    geom_point(size = 3) +
+  scale_shape_manual(values=c(21, 22, 23, 24, 25)) +
+   scale_color_manual(values=c("Europa" = "#F46D43", "Grand Glor" = "#FDAE61",  "Ile du Lys" = "#4575B4", "Juan de Nova"  = "#D73027", "Tromelin" = "#74ADD1")) +
+ scale_fill_manual(values=c("Europa" = "#F46D43", "Grand Glor" = "#FDAE61",  "Ile du Lys" = "#4575B4", "Juan de Nova"  = "#D73027", "Tromelin" = "#74ADD1")) +
+  theme_bw()+
+  xlab(expression(L [infinity]))+
+  theme(panel.grid.major = element_blank(), # remove gridlines
+        panel.grid.minor = element_blank(), #remove gridlines
+        strip.background = element_blank(),
+                axis.text = element_text(color = "black", size = 10),
+       legend.text= element_text(color = "black", size = 10),
+       plot.title = element_text(color = "black", size = 10),
+        legend.position="none")
+plot_klinf
+
+
+
+```
+
+
+
+###plot growth curves plus raw data
+```{r}
+plot_klinf_curve<-
+  growth_dat3 %>%
+  group_by(Island) %>%
+  data_grid(AgeFinal = seq_range(AgeFinal, n = 100), in_e = in_e, in_g = in_g, in_l=in_l, in_j = in_j, in_t = in_t) %>%
+  add_fitted_draws(growth_mod_isl_nosp) %>%
+  ggplot(aes(x = AgeFinal, y = TL_cm, color = Island, alpha = .8)) +
+  stat_lineribbon(aes(y = exp(.value))) +
+  geom_point(data = growth_dat3, aes(shape = Island, fill = Island), size = 3) +
+  scale_shape_manual(values=c(21, 22, 23, 24, 25),  breaks = c("Europa","Grande Glorieuse", "Juan de Nova", "Ile du Lys", "Tromelin")) +
+   scale_color_manual(values=c( "Europa" = "#F46D43", "Grande Glorieuse" = "#FDAE61",  "Ile du Lys" = "#4575B4", "Juan de Nova"  = "#D73027", "Tromelin" = "#74ADD1"),  breaks = c("Europa","Grande Glorieuse", "Juan de Nova", "Ile du Lys", "Tromelin")) +
+ scale_fill_manual(values=c("0.5" = "#737373", "0.8" = "#969696", "0.95" = "#BDBDBD", "Europa" = "#F46D43", "Grande Glorieuse" = "#FDAE61",  "Ile du Lys" = "#4575B4", "Juan de Nova"  = "#D73027", "Tromelin" = "#74ADD1"),  breaks = c("Europa","Grande Glorieuse", "Juan de Nova", "Ile du Lys", "Tromelin")) +
+  ylab("Total length (cm)") + 
+  xlab("Age (years)")+
+  theme_bw()+
+  guides(alpha = FALSE, fill = FALSE)+
+  theme(panel.grid.major = element_blank(), # remove gridlines
+        panel.grid.minor = element_blank(), #remove gridlines
+        strip.background = element_blank(),
+        legend.background=element_blank(),
+        axis.text = element_text(color = "black", size = 10),
+       legend.text= element_text(color = "black", size = 10),
+       plot.title = element_text(color = "black", size = 10),
+       legend.box.background = element_rect(colour = "black"),
+      legend.position=c(0.86, 0.62), # 0.3, 0.2
+        legend.title=element_blank())
+
+plot_klinf_curve
+
+```
+
+
+###combine plots
+```{r}
+plot_klinf_curve
+plot_klinf
+
+growth_plots<-ggdraw(plot_klinf_curve) +
+  draw_plot(plot_klinf, x = .5, y = .07, width = .48, height = .45)
+  
+
+ggsave(filename = "growth_plots_sep17.pdf", 
+      plot = growth_plots,
+      width = 7,
+       height = 6.8,
+       units = "in",
+       dpi = 300,
+       family = "sans",
+       useDingbats=FALSE)
+
+```
+

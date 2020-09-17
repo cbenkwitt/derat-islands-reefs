@@ -1,0 +1,976 @@
+Year,Region,Island,Sample_type,Species,N15,Treatment,Treatment_b,Distance_to_shore,Island_area_hectares
+2015,Chagos,Eagle,Fish,Plectroglyphidodon lacrymatus,10.55,rats,rats,280,244
+2015,Chagos,Eagle,Fish,Plectroglyphidodon lacrymatus,10.4,rats,rats,280,244
+2015,Chagos,Eagle,Fish,Plectroglyphidodon lacrymatus,10.76,rats,rats,280,244
+2015,Chagos,Eagle,Fish,Plectroglyphidodon lacrymatus,10.94,rats,rats,280,244
+2015,Chagos,Eagle,Fish,Plectroglyphidodon lacrymatus,10.9,rats,rats,280,244
+2015,Chagos,Eagle,Fish,Plectroglyphidodon lacrymatus,10.79,rats,rats,280,244
+2015,Chagos,Eagle,Fish,Plectroglyphidodon lacrymatus,11.09,rats,rats,280,244
+2015,Chagos,Eagle,Fish,Plectroglyphidodon lacrymatus,10.8,rats,rats,280,244
+2015,Chagos,Eagle,Fish,Plectroglyphidodon lacrymatus,10.51,rats,rats,280,244
+2015,Chagos,Eagle,Fish,Plectroglyphidodon lacrymatus,10.31,rats,rats,280,244
+2015,Chagos,Eagle,Leaves,Scaevola taccada,-3.48,rats,rats,NA,244
+2015,Chagos,Eagle,Leaves,Scaevola taccada,-1.87,rats,rats,NA,244
+2015,Chagos,Eagle,Leaves,Scaevola taccada,-2.09,rats,rats,NA,244
+2015,Chagos,Eagle,Leaves,Scaevola taccada,-2.52,rats,rats,NA,244
+2015,Chagos,Eagle,Leaves,Scaevola taccada,-2.52,rats,rats,NA,244
+2015,Chagos,Eagle,Leaves,Scaevola taccada,-2.84,rats,rats,NA,244
+2015,Chagos,Eagle,Leaves,Scaevola taccada,-4.03,rats,rats,NA,244
+2015,Chagos,Eagle,Leaves,Scaevola taccada,-2.08,rats,rats,NA,244
+2015,Chagos,Eagle,Leaves,Scaevola taccada,-2.93,rats,rats,NA,244
+2015,Chagos,Eagle,Leaves,Scaevola taccada,-1.85,rats,rats,NA,244
+2015,Chagos,Eagle,Macroalgae,Halimeda,6.11,rats,rats,100,244
+2015,Chagos,Eagle,Macroalgae,Halimeda,3.99,rats,rats,100,244
+2015,Chagos,Eagle,Macroalgae,Halimeda,4.52,rats,rats,100,244
+2015,Chagos,Eagle,Macroalgae,Halimeda,5.14,rats,rats,100,244
+2015,Chagos,Eagle,Macroalgae,Halimeda,5.18,rats,rats,100,244
+2015,Chagos,Eagle,Macroalgae,Halimeda,4.21,rats,rats,100,244
+2015,Chagos,Eagle,Macroalgae,Halimeda,4.83,rats,rats,100,244
+2015,Chagos,Eagle,Macroalgae,Halimeda,6.82,rats,rats,100,244
+2015,Chagos,Eagle,Macroalgae,Halimeda,4.32,rats,rats,100,244
+2015,Chagos,Eagle,Soil,Soil,2.43,rats,rats,NA,244
+2015,Chagos,Eagle,Soil,Soil,2,rats,rats,NA,244
+2015,Chagos,Eagle,Soil,Soil,2.62,rats,rats,NA,244
+2015,Chagos,Eagle,Soil,Soil,2.64,rats,rats,NA,244
+2015,Chagos,Eagle,Soil,Soil,2.62,rats,rats,NA,244
+2015,Chagos,Eagle,Soil,Soil,2.5,rats,rats,NA,244
+2015,Chagos,Eagle,Soil,Soil,2.94,rats,rats,NA,244
+2015,Chagos,Eagle,Soil,Soil,2.84,rats,rats,NA,244
+2015,Chagos,Eagle,Soil,Soil,3.37,rats,rats,NA,244
+2015,Chagos,Eagle,Soil,Soil,2.03,rats,rats,NA,244
+2015,Chagos,Eagle,Turf,Turf,5.34,rats,rats,280,244
+2015,Chagos,Eagle,Turf,Turf,5.29,rats,rats,280,244
+2015,Chagos,Eagle,Turf,Turf,5.69,rats,rats,280,244
+2015,Chagos,Eagle,Turf,Turf,5.45,rats,rats,280,244
+2015,Chagos,Eagle,Turf,Turf,5.6,rats,rats,280,244
+2015,Chagos,Eagle,Turf,Turf,5.58,rats,rats,280,244
+2015,Chagos,Eagle,Turf,Turf,5.43,rats,rats,280,244
+2015,Chagos,Eagle,Turf,Turf,5.43,rats,rats,280,244
+2015,Chagos,Eagle,Turf,Turf,5.79,rats,rats,280,244
+2015,Chagos,Eagle,Turf,Turf,5.36,rats,rats,280,244
+2015,Chagos,Grande_Ile_Coquillage,Fish,Plectroglyphidodon lacrymatus,11.23,never_rats,never_rats,175,28
+2015,Chagos,Grande_Ile_Coquillage,Fish,Plectroglyphidodon lacrymatus,11.81,never_rats,never_rats,175,28
+2015,Chagos,Grande_Ile_Coquillage,Fish,Plectroglyphidodon lacrymatus,11.52,never_rats,never_rats,175,28
+2015,Chagos,Grande_Ile_Coquillage,Fish,Plectroglyphidodon lacrymatus,11.17,never_rats,never_rats,175,28
+2015,Chagos,Grande_Ile_Coquillage,Fish,Plectroglyphidodon lacrymatus,11.48,never_rats,never_rats,175,28
+2015,Chagos,Grande_Ile_Coquillage,Fish,Plectroglyphidodon lacrymatus,11.25,never_rats,never_rats,175,28
+2015,Chagos,Grande_Ile_Coquillage,Fish,Plectroglyphidodon lacrymatus,11.46,never_rats,never_rats,175,28
+2015,Chagos,Grande_Ile_Coquillage,Fish,Plectroglyphidodon lacrymatus,11.34,never_rats,never_rats,175,28
+2015,Chagos,Grande_Ile_Coquillage,Fish,Plectroglyphidodon lacrymatus,11.56,never_rats,never_rats,175,28
+2015,Chagos,Grande_Ile_Coquillage,Fish,Plectroglyphidodon lacrymatus,11.12,never_rats,never_rats,175,28
+2015,Chagos,Grande_Ile_Coquillage,Leaves,Scaevola taccada,10.72,never_rats,never_rats,NA,28
+2015,Chagos,Grande_Ile_Coquillage,Leaves,Scaevola taccada,11.63,never_rats,never_rats,NA,28
+2015,Chagos,Grande_Ile_Coquillage,Leaves,Scaevola taccada,10.52,never_rats,never_rats,NA,28
+2015,Chagos,Grande_Ile_Coquillage,Leaves,Scaevola taccada,10.61,never_rats,never_rats,NA,28
+2015,Chagos,Grande_Ile_Coquillage,Leaves,Scaevola taccada,12.21,never_rats,never_rats,NA,28
+2015,Chagos,Grande_Ile_Coquillage,Leaves,Scaevola taccada,10.69,never_rats,never_rats,NA,28
+2015,Chagos,Grande_Ile_Coquillage,Leaves,Scaevola taccada,10.72,never_rats,never_rats,NA,28
+2015,Chagos,Grande_Ile_Coquillage,Leaves,Scaevola taccada,12.02,never_rats,never_rats,NA,28
+2015,Chagos,Grande_Ile_Coquillage,Leaves,Scaevola taccada,10.95,never_rats,never_rats,NA,28
+2015,Chagos,Grande_Ile_Coquillage,Leaves,Scaevola taccada,12.5,never_rats,never_rats,NA,28
+2015,Chagos,Grande_Ile_Coquillage,Macroalgae,Halimeda,5.91,never_rats,never_rats,100,28
+2015,Chagos,Grande_Ile_Coquillage,Macroalgae,Halimeda,5.07,never_rats,never_rats,100,28
+2015,Chagos,Grande_Ile_Coquillage,Macroalgae,Halimeda,4.74,never_rats,never_rats,100,28
+2015,Chagos,Grande_Ile_Coquillage,Macroalgae,Halimeda,5.25,never_rats,never_rats,100,28
+2015,Chagos,Grande_Ile_Coquillage,Macroalgae,Halimeda,4.74,never_rats,never_rats,100,28
+2015,Chagos,Grande_Ile_Coquillage,Macroalgae,Halimeda,5.1,never_rats,never_rats,100,28
+2015,Chagos,Grande_Ile_Coquillage,Macroalgae,Halimeda,5.95,never_rats,never_rats,100,28
+2015,Chagos,Grande_Ile_Coquillage,Macroalgae,Halimeda,5.65,never_rats,never_rats,100,28
+2015,Chagos,Grande_Ile_Coquillage,Macroalgae,Halimeda,5.74,never_rats,never_rats,100,28
+2015,Chagos,Grande_Ile_Coquillage,Macroalgae,Halimeda,5.51,never_rats,never_rats,100,28
+2015,Chagos,Grande_Ile_Coquillage,Soil,Soil,13.47,never_rats,never_rats,NA,28
+2015,Chagos,Grande_Ile_Coquillage,Soil,Soil,11.07,never_rats,never_rats,NA,28
+2015,Chagos,Grande_Ile_Coquillage,Soil,Soil,15.16,never_rats,never_rats,NA,28
+2015,Chagos,Grande_Ile_Coquillage,Soil,Soil,11.98,never_rats,never_rats,NA,28
+2015,Chagos,Grande_Ile_Coquillage,Soil,Soil,13.25,never_rats,never_rats,NA,28
+2015,Chagos,Grande_Ile_Coquillage,Soil,Soil,10.83,never_rats,never_rats,NA,28
+2015,Chagos,Grande_Ile_Coquillage,Soil,Soil,12.54,never_rats,never_rats,NA,28
+2015,Chagos,Grande_Ile_Coquillage,Soil,Soil,14.18,never_rats,never_rats,NA,28
+2015,Chagos,Grande_Ile_Coquillage,Soil,Soil,11.55,never_rats,never_rats,NA,28
+2015,Chagos,Grande_Ile_Coquillage,Soil,Soil,12.79,never_rats,never_rats,NA,28
+2015,Chagos,Grande_Ile_Coquillage,Turf,Turf,5.31,never_rats,never_rats,175,28
+2015,Chagos,Grande_Ile_Coquillage,Turf,Turf,5.77,never_rats,never_rats,175,28
+2015,Chagos,Grande_Ile_Coquillage,Turf,Turf,5.81,never_rats,never_rats,175,28
+2015,Chagos,Grande_Ile_Coquillage,Turf,Turf,5.54,never_rats,never_rats,175,28
+2015,Chagos,Grande_Ile_Coquillage,Turf,Turf,5.14,never_rats,never_rats,175,28
+2015,Chagos,Grande_Ile_Coquillage,Turf,Turf,6.05,never_rats,never_rats,175,28
+2015,Chagos,Grande_Ile_Coquillage,Turf,Turf,5.07,never_rats,never_rats,175,28
+2015,Chagos,Grande_Ile_Coquillage,Turf,Turf,3.19,never_rats,never_rats,175,28
+2015,Chagos,Grande_Ile_Coquillage,Turf,Turf,5.75,never_rats,never_rats,175,28
+2015,Chagos,Grande_Ile_Coquillage,Turf,Turf,4.66,never_rats,never_rats,175,28
+2015,Chagos,Grande_Ile_Mapou,Fish,Plectroglyphidodon lacrymatus,10.43,rats,rats,300,20
+2015,Chagos,Grande_Ile_Mapou,Fish,Plectroglyphidodon lacrymatus,11.02,rats,rats,300,20
+2015,Chagos,Grande_Ile_Mapou,Fish,Plectroglyphidodon lacrymatus,10.7,rats,rats,300,20
+2015,Chagos,Grande_Ile_Mapou,Fish,Plectroglyphidodon lacrymatus,10.3,rats,rats,300,20
+2015,Chagos,Grande_Ile_Mapou,Fish,Plectroglyphidodon lacrymatus,10.78,rats,rats,300,20
+2015,Chagos,Grande_Ile_Mapou,Fish,Plectroglyphidodon lacrymatus,10.73,rats,rats,300,20
+2015,Chagos,Grande_Ile_Mapou,Fish,Plectroglyphidodon lacrymatus,10.19,rats,rats,300,20
+2015,Chagos,Grande_Ile_Mapou,Fish,Plectroglyphidodon lacrymatus,11.06,rats,rats,300,20
+2015,Chagos,Grande_Ile_Mapou,Fish,Plectroglyphidodon lacrymatus,10.38,rats,rats,300,20
+2015,Chagos,Grande_Ile_Mapou,Fish,Plectroglyphidodon lacrymatus,10.66,rats,rats,300,20
+2015,Chagos,Grande_Ile_Mapou,Leaves,Scaevola taccada,-2.87,rats,rats,NA,20
+2015,Chagos,Grande_Ile_Mapou,Leaves,Scaevola taccada,-0.13,rats,rats,NA,20
+2015,Chagos,Grande_Ile_Mapou,Leaves,Scaevola taccada,6.46,rats,rats,NA,20
+2015,Chagos,Grande_Ile_Mapou,Leaves,Scaevola taccada,-0.93,rats,rats,NA,20
+2015,Chagos,Grande_Ile_Mapou,Leaves,Scaevola taccada,-1.35,rats,rats,NA,20
+2015,Chagos,Grande_Ile_Mapou,Leaves,Scaevola taccada,-0.02,rats,rats,NA,20
+2015,Chagos,Grande_Ile_Mapou,Leaves,Scaevola taccada,-1.91,rats,rats,NA,20
+2015,Chagos,Grande_Ile_Mapou,Leaves,Scaevola taccada,6.15,rats,rats,NA,20
+2015,Chagos,Grande_Ile_Mapou,Leaves,Scaevola taccada,6.31,rats,rats,NA,20
+2015,Chagos,Grande_Ile_Mapou,Leaves,Scaevola taccada,-0.25,rats,rats,NA,20
+2015,Chagos,Grande_Ile_Mapou,Macroalgae,Halimeda,3.53,rats,rats,100,20
+2015,Chagos,Grande_Ile_Mapou,Macroalgae,Halimeda,3.64,rats,rats,100,20
+2015,Chagos,Grande_Ile_Mapou,Macroalgae,Halimeda,3.09,rats,rats,100,20
+2015,Chagos,Grande_Ile_Mapou,Macroalgae,Halimeda,3.78,rats,rats,100,20
+2015,Chagos,Grande_Ile_Mapou,Macroalgae,Halimeda,3.7,rats,rats,100,20
+2015,Chagos,Grande_Ile_Mapou,Macroalgae,Halimeda,3.94,rats,rats,100,20
+2015,Chagos,Grande_Ile_Mapou,Macroalgae,Halimeda,3.89,rats,rats,100,20
+2015,Chagos,Grande_Ile_Mapou,Macroalgae,Halimeda,3.54,rats,rats,100,20
+2015,Chagos,Grande_Ile_Mapou,Macroalgae,Halimeda,3.73,rats,rats,100,20
+2015,Chagos,Grande_Ile_Mapou,Macroalgae,Halimeda,4.32,rats,rats,100,20
+2015,Chagos,Grande_Ile_Mapou,Soil,Soil,4.7,rats,rats,NA,20
+2015,Chagos,Grande_Ile_Mapou,Soil,Soil,2.45,rats,rats,NA,20
+2015,Chagos,Grande_Ile_Mapou,Soil,Soil,4.27,rats,rats,NA,20
+2015,Chagos,Grande_Ile_Mapou,Soil,Soil,5.71,rats,rats,NA,20
+2015,Chagos,Grande_Ile_Mapou,Soil,Soil,1.39,rats,rats,NA,20
+2015,Chagos,Grande_Ile_Mapou,Soil,Soil,3.03,rats,rats,NA,20
+2015,Chagos,Grande_Ile_Mapou,Soil,Soil,3.17,rats,rats,NA,20
+2015,Chagos,Grande_Ile_Mapou,Soil,Soil,0.96,rats,rats,NA,20
+2015,Chagos,Grande_Ile_Mapou,Soil,Soil,2.31,rats,rats,NA,20
+2015,Chagos,Grande_Ile_Mapou,Soil,Soil,3.3,rats,rats,NA,20
+2015,Chagos,Grande_Ile_Mapou,Turf,Turf,5.38,rats,rats,300,20
+2015,Chagos,Grande_Ile_Mapou,Turf,Turf,5.26,rats,rats,300,20
+2015,Chagos,Grande_Ile_Mapou,Turf,Turf,5.24,rats,rats,300,20
+2015,Chagos,Grande_Ile_Mapou,Turf,Turf,4.79,rats,rats,300,20
+2015,Chagos,Grande_Ile_Mapou,Turf,Turf,5.43,rats,rats,300,20
+2015,Chagos,Grande_Ile_Mapou,Turf,Turf,4.89,rats,rats,300,20
+2015,Chagos,Grande_Ile_Mapou,Turf,Turf,5.65,rats,rats,300,20
+2015,Chagos,Grande_Ile_Mapou,Turf,Turf,5.49,rats,rats,300,20
+2015,Chagos,Grande_Ile_Mapou,Turf,Turf,5.06,rats,rats,300,20
+2015,Chagos,Grande_Ile_Mapou,Turf,Turf,5.38,rats,rats,300,20
+2018,Chagos,Ile Jacobin,Leaves,Scaevola taccada,0.05,derat,derat,NA,2
+2018,Chagos,Ile Jacobin,Leaves,Scaevola taccada,2.28,derat,derat,NA,2
+2018,Chagos,Ile Jacobin,Leaves,Scaevola taccada,1.61,derat,derat,NA,2
+2018,Chagos,Ile Jacobin,Leaves,Scaevola taccada,2.34,derat,derat,NA,2
+2018,Chagos,Ile Jacobin,Leaves,Scaevola taccada,1.08,derat,derat,NA,2
+2018,Chagos,Ile Jacobin,Leaves,Scaevola taccada,1.5,derat,derat,NA,2
+2018,Chagos,Ile Jacobin,Leaves,Scaevola taccada,3,derat,derat,NA,2
+2018,Chagos,Ile Jacobin,Leaves,Scaevola taccada,3.83,derat,derat,NA,2
+2018,Chagos,Ile Jacobin,Leaves,Scaevola taccada,1.66,derat,derat,NA,2
+2018,Chagos,Ile Jacobin,Leaves,Scaevola taccada,3.28,derat,derat,NA,2
+2018,Chagos,Ile Jacobin,Soil,Soil,6.4,derat,derat,NA,2
+2018,Chagos,Ile Jacobin,Soil,Soil,6.27,derat,derat,NA,2
+2018,Chagos,Ile Jacobin,Soil,Soil,8.51,derat,derat,NA,2
+2018,Chagos,Ile Jacobin,Soil,Soil,9.86,derat,derat,NA,2
+2018,Chagos,Ile Jacobin,Soil,Soil,9.53,derat,derat,NA,2
+2018,Chagos,Ile Jacobin,Soil,Soil,8.67,derat,derat,NA,2
+2018,Chagos,Ile Jacobin,Soil,Soil,4.49,derat,derat,NA,2
+2018,Chagos,Ile Jacobin,Soil,Soil,4.61,derat,derat,NA,2
+2018,Chagos,Ile Jacobin,Soil,Soil,9.6,derat,derat,NA,2
+2018,Chagos,Ile Jacobin,Soil,Soil,7.69,derat,derat,NA,2
+2018,Chagos,Ile Sepulture,Leaves,Scaevola taccada,5.41,rats,rats,NA,2
+2018,Chagos,Ile Sepulture,Leaves,Scaevola taccada,6.08,rats,rats,NA,2
+2018,Chagos,Ile Sepulture,Leaves,Scaevola taccada,6,rats,rats,NA,2
+2018,Chagos,Ile Sepulture,Leaves,Scaevola taccada,5.06,rats,rats,NA,2
+2018,Chagos,Ile Sepulture,Leaves,Scaevola taccada,4.42,rats,rats,NA,2
+2018,Chagos,Ile Sepulture,Leaves,Scaevola taccada,4.15,rats,rats,NA,2
+2018,Chagos,Ile Sepulture,Leaves,Scaevola taccada,4.44,rats,rats,NA,2
+2018,Chagos,Ile Sepulture,Leaves,Scaevola taccada,4.98,rats,rats,NA,2
+2018,Chagos,Ile Sepulture,Leaves,Scaevola taccada,4.63,rats,rats,NA,2
+2018,Chagos,Ile Sepulture,Leaves,Scaevola taccada,4.83,rats,rats,NA,2
+2018,Chagos,Ile Sepulture,Soil,Soil,9.96,rats,rats,NA,2
+2018,Chagos,Ile Sepulture,Soil,Soil,8.02,rats,rats,NA,2
+2018,Chagos,Ile Sepulture,Soil,Soil,10.28,rats,rats,NA,2
+2018,Chagos,Ile Sepulture,Soil,Soil,6.94,rats,rats,NA,2
+2018,Chagos,Ile Sepulture,Soil,Soil,6.92,rats,rats,NA,2
+2018,Chagos,Ile Sepulture,Soil,Soil,6.61,rats,rats,NA,2
+2018,Chagos,Ile Sepulture,Soil,Soil,5.79,rats,rats,NA,2
+2018,Chagos,Ile Sepulture,Soil,Soil,7.71,rats,rats,NA,2
+2018,Chagos,Ile Sepulture,Soil,Soil,9.19,rats,rats,NA,2
+2018,Chagos,Ile Sepulture,Soil,Soil,7.27,rats,rats,NA,2
+2015,Chagos,Ile_de_la_Passe,Fish,Plectroglyphidodon lacrymatus,11.13,never_rats,never_rats,215,26
+2015,Chagos,Ile_de_la_Passe,Fish,Plectroglyphidodon lacrymatus,10.99,never_rats,never_rats,215,26
+2015,Chagos,Ile_de_la_Passe,Fish,Plectroglyphidodon lacrymatus,10.59,never_rats,never_rats,215,26
+2015,Chagos,Ile_de_la_Passe,Fish,Plectroglyphidodon lacrymatus,11.1,never_rats,never_rats,215,26
+2015,Chagos,Ile_de_la_Passe,Fish,Plectroglyphidodon lacrymatus,10.98,never_rats,never_rats,215,26
+2015,Chagos,Ile_de_la_Passe,Fish,Plectroglyphidodon lacrymatus,10.89,never_rats,never_rats,215,26
+2015,Chagos,Ile_de_la_Passe,Fish,Plectroglyphidodon lacrymatus,10.68,never_rats,never_rats,215,26
+2015,Chagos,Ile_de_la_Passe,Fish,Plectroglyphidodon lacrymatus,11.05,never_rats,never_rats,215,26
+2015,Chagos,Ile_de_la_Passe,Fish,Plectroglyphidodon lacrymatus,10.93,never_rats,never_rats,215,26
+2015,Chagos,Ile_de_la_Passe,Fish,Plectroglyphidodon lacrymatus,10.88,never_rats,never_rats,215,26
+2015,Chagos,Ile_de_la_Passe,Leaves,Scaevola taccada,6.81,never_rats,never_rats,NA,26
+2015,Chagos,Ile_de_la_Passe,Leaves,Scaevola taccada,4.64,never_rats,never_rats,NA,26
+2015,Chagos,Ile_de_la_Passe,Leaves,Scaevola taccada,6.37,never_rats,never_rats,NA,26
+2015,Chagos,Ile_de_la_Passe,Leaves,Scaevola taccada,7.31,never_rats,never_rats,NA,26
+2015,Chagos,Ile_de_la_Passe,Leaves,Scaevola taccada,4.62,never_rats,never_rats,NA,26
+2015,Chagos,Ile_de_la_Passe,Leaves,Scaevola taccada,4.29,never_rats,never_rats,NA,26
+2015,Chagos,Ile_de_la_Passe,Leaves,Scaevola taccada,5.85,never_rats,never_rats,NA,26
+2015,Chagos,Ile_de_la_Passe,Leaves,Scaevola taccada,6.06,never_rats,never_rats,NA,26
+2015,Chagos,Ile_de_la_Passe,Leaves,Scaevola taccada,6.93,never_rats,never_rats,NA,26
+2015,Chagos,Ile_de_la_Passe,Leaves,Scaevola taccada,6.26,never_rats,never_rats,NA,26
+2015,Chagos,Ile_de_la_Passe,Macroalgae,Halimeda,4.4,never_rats,never_rats,100,26
+2015,Chagos,Ile_de_la_Passe,Macroalgae,Halimeda,4.73,never_rats,never_rats,100,26
+2015,Chagos,Ile_de_la_Passe,Macroalgae,Halimeda,4.91,never_rats,never_rats,100,26
+2015,Chagos,Ile_de_la_Passe,Macroalgae,Halimeda,4.75,never_rats,never_rats,100,26
+2015,Chagos,Ile_de_la_Passe,Macroalgae,Halimeda,4.43,never_rats,never_rats,100,26
+2015,Chagos,Ile_de_la_Passe,Macroalgae,Halimeda,4.78,never_rats,never_rats,100,26
+2015,Chagos,Ile_de_la_Passe,Macroalgae,Halimeda,4.78,never_rats,never_rats,100,26
+2015,Chagos,Ile_de_la_Passe,Macroalgae,Halimeda,4.75,never_rats,never_rats,100,26
+2015,Chagos,Ile_de_la_Passe,Macroalgae,Halimeda,4.28,never_rats,never_rats,100,26
+2015,Chagos,Ile_de_la_Passe,Macroalgae,Halimeda,4.34,never_rats,never_rats,100,26
+2015,Chagos,Ile_de_la_Passe,Soil,Soil,4.71,never_rats,never_rats,NA,26
+2015,Chagos,Ile_de_la_Passe,Soil,Soil,10.33,never_rats,never_rats,NA,26
+2015,Chagos,Ile_de_la_Passe,Soil,Soil,10.74,never_rats,never_rats,NA,26
+2015,Chagos,Ile_de_la_Passe,Soil,Soil,6.53,never_rats,never_rats,NA,26
+2015,Chagos,Ile_de_la_Passe,Soil,Soil,11.31,never_rats,never_rats,NA,26
+2015,Chagos,Ile_de_la_Passe,Soil,Soil,7.05,never_rats,never_rats,NA,26
+2015,Chagos,Ile_de_la_Passe,Soil,Soil,6.74,never_rats,never_rats,NA,26
+2015,Chagos,Ile_de_la_Passe,Soil,Soil,8.87,never_rats,never_rats,NA,26
+2015,Chagos,Ile_de_la_Passe,Soil,Soil,7.98,never_rats,never_rats,NA,26
+2015,Chagos,Ile_de_la_Passe,Soil,Soil,5.4,never_rats,never_rats,NA,26
+2015,Chagos,Ile_de_la_Passe,Turf,Turf,4.49,never_rats,never_rats,215,26
+2015,Chagos,Ile_de_la_Passe,Turf,Turf,4.17,never_rats,never_rats,215,26
+2015,Chagos,Ile_de_la_Passe,Turf,Turf,4.88,never_rats,never_rats,215,26
+2015,Chagos,Ile_de_la_Passe,Turf,Turf,4.15,never_rats,never_rats,215,26
+2015,Chagos,Ile_de_la_Passe,Turf,Turf,4.44,never_rats,never_rats,215,26
+2015,Chagos,Ile_de_la_Passe,Turf,Turf,4.39,never_rats,never_rats,215,26
+2015,Chagos,Ile_de_la_Passe,Turf,Turf,3.83,never_rats,never_rats,215,26
+2015,Chagos,Ile_de_la_Passe,Turf,Turf,3.85,never_rats,never_rats,215,26
+2015,Chagos,Ile_de_la_Passe,Turf,Turf,4.98,never_rats,never_rats,215,26
+2015,Chagos,Ile_de_la_Passe,Turf,Turf,3.92,never_rats,never_rats,215,26
+2015,Chagos,Ile_Fouquet,Fish,Plectroglyphidodon lacrymatus,10.89,rats,rats,130,40
+2015,Chagos,Ile_Fouquet,Fish,Plectroglyphidodon lacrymatus,10.29,rats,rats,130,40
+2015,Chagos,Ile_Fouquet,Fish,Plectroglyphidodon lacrymatus,9.95,rats,rats,130,40
+2015,Chagos,Ile_Fouquet,Fish,Plectroglyphidodon lacrymatus,10.71,rats,rats,130,40
+2015,Chagos,Ile_Fouquet,Fish,Plectroglyphidodon lacrymatus,10.55,rats,rats,130,40
+2015,Chagos,Ile_Fouquet,Fish,Plectroglyphidodon lacrymatus,10.39,rats,rats,130,40
+2015,Chagos,Ile_Fouquet,Fish,Plectroglyphidodon lacrymatus,10.44,rats,rats,130,40
+2015,Chagos,Ile_Fouquet,Fish,Plectroglyphidodon lacrymatus,10.4,rats,rats,130,40
+2015,Chagos,Ile_Fouquet,Fish,Plectroglyphidodon lacrymatus,11.39,rats,rats,130,40
+2015,Chagos,Ile_Fouquet,Fish,Plectroglyphidodon lacrymatus,10.84,rats,rats,130,40
+2015,Chagos,Ile_Fouquet,Leaves,Scaevola taccada,5.29,rats,rats,NA,40
+2015,Chagos,Ile_Fouquet,Leaves,Scaevola taccada,12.8,rats,rats,NA,40
+2015,Chagos,Ile_Fouquet,Leaves,Scaevola taccada,7.24,rats,rats,NA,40
+2015,Chagos,Ile_Fouquet,Leaves,Scaevola taccada,3.58,rats,rats,NA,40
+2015,Chagos,Ile_Fouquet,Leaves,Scaevola taccada,5.45,rats,rats,NA,40
+2015,Chagos,Ile_Fouquet,Leaves,Scaevola taccada,11.41,rats,rats,NA,40
+2015,Chagos,Ile_Fouquet,Leaves,Scaevola taccada,6.34,rats,rats,NA,40
+2015,Chagos,Ile_Fouquet,Leaves,Scaevola taccada,6.37,rats,rats,NA,40
+2015,Chagos,Ile_Fouquet,Leaves,Scaevola taccada,10.6,rats,rats,NA,40
+2015,Chagos,Ile_Fouquet,Leaves,Scaevola taccada,7.47,rats,rats,NA,40
+2015,Chagos,Ile_Fouquet,Macroalgae,Halimeda,5.07,rats,rats,100,40
+2015,Chagos,Ile_Fouquet,Macroalgae,Halimeda,5.4,rats,rats,100,40
+2015,Chagos,Ile_Fouquet,Macroalgae,Halimeda,5.29,rats,rats,100,40
+2015,Chagos,Ile_Fouquet,Macroalgae,Halimeda,4.84,rats,rats,100,40
+2015,Chagos,Ile_Fouquet,Macroalgae,Halimeda,5.17,rats,rats,100,40
+2015,Chagos,Ile_Fouquet,Macroalgae,Halimeda,5.3,rats,rats,100,40
+2015,Chagos,Ile_Fouquet,Macroalgae,Halimeda,5.24,rats,rats,100,40
+2015,Chagos,Ile_Fouquet,Macroalgae,Halimeda,5.1,rats,rats,100,40
+2015,Chagos,Ile_Fouquet,Macroalgae,Halimeda,5.38,rats,rats,100,40
+2015,Chagos,Ile_Fouquet,Macroalgae,Halimeda,5.12,rats,rats,100,40
+2015,Chagos,Ile_Fouquet,Soil,Soil,7.53,rats,rats,NA,40
+2015,Chagos,Ile_Fouquet,Soil,Soil,8,rats,rats,NA,40
+2015,Chagos,Ile_Fouquet,Soil,Soil,6.55,rats,rats,NA,40
+2015,Chagos,Ile_Fouquet,Soil,Soil,7.56,rats,rats,NA,40
+2015,Chagos,Ile_Fouquet,Soil,Soil,7.32,rats,rats,NA,40
+2015,Chagos,Ile_Fouquet,Soil,Soil,7.86,rats,rats,NA,40
+2015,Chagos,Ile_Fouquet,Soil,Soil,6.39,rats,rats,NA,40
+2015,Chagos,Ile_Fouquet,Soil,Soil,7.33,rats,rats,NA,40
+2015,Chagos,Ile_Fouquet,Soil,Soil,6.77,rats,rats,NA,40
+2015,Chagos,Ile_Fouquet,Soil,Soil,7.18,rats,rats,NA,40
+2015,Chagos,Ile_Fouquet,Turf,Turf,3.39,rats,rats,130,40
+2015,Chagos,Ile_Fouquet,Turf,Turf,3.82,rats,rats,130,40
+2015,Chagos,Ile_Fouquet,Turf,Turf,3.89,rats,rats,130,40
+2015,Chagos,Ile_Fouquet,Turf,Turf,3.59,rats,rats,130,40
+2015,Chagos,Ile_Fouquet,Turf,Turf,4.65,rats,rats,130,40
+2015,Chagos,Ile_Fouquet,Turf,Turf,3.78,rats,rats,130,40
+2015,Chagos,Ile_Fouquet,Turf,Turf,3.73,rats,rats,130,40
+2015,Chagos,Ile_Fouquet,Turf,Turf,3.91,rats,rats,130,40
+2015,Chagos,Ile_Fouquet,Turf,Turf,4.12,rats,rats,130,40
+2015,Chagos,Ile_Fouquet,Turf,Turf,3.91,rats,rats,130,40
+2015,Chagos,Ile_Longue,Fish,Plectroglyphidodon lacrymatus,10.16,never_rats,never_rats,215,26
+2015,Chagos,Ile_Longue,Fish,Plectroglyphidodon lacrymatus,10.27,never_rats,never_rats,215,26
+2015,Chagos,Ile_Longue,Fish,Plectroglyphidodon lacrymatus,9.97,never_rats,never_rats,215,26
+2015,Chagos,Ile_Longue,Fish,Plectroglyphidodon lacrymatus,10.24,never_rats,never_rats,215,26
+2015,Chagos,Ile_Longue,Fish,Plectroglyphidodon lacrymatus,10.57,never_rats,never_rats,215,26
+2015,Chagos,Ile_Longue,Fish,Plectroglyphidodon lacrymatus,9.82,never_rats,never_rats,215,26
+2015,Chagos,Ile_Longue,Fish,Plectroglyphidodon lacrymatus,10.33,never_rats,never_rats,215,26
+2015,Chagos,Ile_Longue,Fish,Plectroglyphidodon lacrymatus,10.23,never_rats,never_rats,215,26
+2015,Chagos,Ile_Longue,Fish,Plectroglyphidodon lacrymatus,9.78,never_rats,never_rats,215,26
+2015,Chagos,Ile_Longue,Fish,Plectroglyphidodon lacrymatus,10.03,never_rats,never_rats,215,26
+2015,Chagos,Ile_Longue,Leaves,Scaevola taccada,8.18,never_rats,never_rats,NA,26
+2015,Chagos,Ile_Longue,Leaves,Scaevola taccada,9.76,never_rats,never_rats,NA,26
+2015,Chagos,Ile_Longue,Leaves,Scaevola taccada,10.84,never_rats,never_rats,NA,26
+2015,Chagos,Ile_Longue,Leaves,Scaevola taccada,9.02,never_rats,never_rats,NA,26
+2015,Chagos,Ile_Longue,Leaves,Scaevola taccada,8.42,never_rats,never_rats,NA,26
+2015,Chagos,Ile_Longue,Leaves,Scaevola taccada,9.49,never_rats,never_rats,NA,26
+2015,Chagos,Ile_Longue,Leaves,Scaevola taccada,11.85,never_rats,never_rats,NA,26
+2015,Chagos,Ile_Longue,Leaves,Scaevola taccada,11.84,never_rats,never_rats,NA,26
+2015,Chagos,Ile_Longue,Leaves,Scaevola taccada,9.84,never_rats,never_rats,NA,26
+2015,Chagos,Ile_Longue,Leaves,Scaevola taccada,9.78,never_rats,never_rats,NA,26
+2015,Chagos,Ile_Longue,Macroalgae,Halimeda,6.42,never_rats,never_rats,100,26
+2015,Chagos,Ile_Longue,Macroalgae,Halimeda,6.76,never_rats,never_rats,100,26
+2015,Chagos,Ile_Longue,Macroalgae,Halimeda,6.45,never_rats,never_rats,100,26
+2015,Chagos,Ile_Longue,Macroalgae,Halimeda,6.5,never_rats,never_rats,100,26
+2015,Chagos,Ile_Longue,Macroalgae,Halimeda,6.57,never_rats,never_rats,100,26
+2015,Chagos,Ile_Longue,Macroalgae,Halimeda,6.94,never_rats,never_rats,100,26
+2015,Chagos,Ile_Longue,Macroalgae,Halimeda,6.86,never_rats,never_rats,100,26
+2015,Chagos,Ile_Longue,Macroalgae,Halimeda,6.97,never_rats,never_rats,100,26
+2015,Chagos,Ile_Longue,Macroalgae,Halimeda,6.8,never_rats,never_rats,100,26
+2015,Chagos,Ile_Longue,Soil,Soil,15.65,never_rats,never_rats,NA,26
+2015,Chagos,Ile_Longue,Soil,Soil,10.14,never_rats,never_rats,NA,26
+2015,Chagos,Ile_Longue,Soil,Soil,9.92,never_rats,never_rats,NA,26
+2015,Chagos,Ile_Longue,Soil,Soil,14.94,never_rats,never_rats,NA,26
+2015,Chagos,Ile_Longue,Soil,Soil,13.4,never_rats,never_rats,NA,26
+2015,Chagos,Ile_Longue,Soil,Soil,12.09,never_rats,never_rats,NA,26
+2015,Chagos,Ile_Longue,Soil,Soil,14.52,never_rats,never_rats,NA,26
+2015,Chagos,Ile_Longue,Soil,Soil,13.55,never_rats,never_rats,NA,26
+2015,Chagos,Ile_Longue,Soil,Soil,11.76,never_rats,never_rats,NA,26
+2015,Chagos,Ile_Longue,Soil,Soil,15.57,never_rats,never_rats,NA,26
+2015,Chagos,Ile_Longue,Turf,Turf,4.78,never_rats,never_rats,215,26
+2015,Chagos,Ile_Longue,Turf,Turf,4.77,never_rats,never_rats,215,26
+2015,Chagos,Ile_Longue,Turf,Turf,5.08,never_rats,never_rats,215,26
+2015,Chagos,Ile_Longue,Turf,Turf,5.18,never_rats,never_rats,215,26
+2015,Chagos,Ile_Longue,Turf,Turf,4.29,never_rats,never_rats,215,26
+2015,Chagos,Ile_Longue,Turf,Turf,4.74,never_rats,never_rats,215,26
+2015,Chagos,Ile_Longue,Turf,Turf,5.03,never_rats,never_rats,215,26
+2015,Chagos,Ile_Longue,Turf,Turf,4.8,never_rats,never_rats,215,26
+2015,Chagos,Ile_Longue,Turf,Turf,4.7,never_rats,never_rats,215,26
+2015,Chagos,Ile_Longue,Turf,Turf,4.5,never_rats,never_rats,215,26
+2015,Chagos,Ile_Poule,Fish,Plectroglyphidodon lacrymatus,10.54,rats,rats,280,108
+2015,Chagos,Ile_Poule,Fish,Plectroglyphidodon lacrymatus,10.12,rats,rats,280,108
+2015,Chagos,Ile_Poule,Fish,Plectroglyphidodon lacrymatus,10.35,rats,rats,280,108
+2015,Chagos,Ile_Poule,Fish,Plectroglyphidodon lacrymatus,10.32,rats,rats,280,108
+2015,Chagos,Ile_Poule,Fish,Plectroglyphidodon lacrymatus,10.33,rats,rats,280,108
+2015,Chagos,Ile_Poule,Fish,Plectroglyphidodon lacrymatus,10.47,rats,rats,280,108
+2015,Chagos,Ile_Poule,Fish,Plectroglyphidodon lacrymatus,10.69,rats,rats,280,108
+2015,Chagos,Ile_Poule,Fish,Plectroglyphidodon lacrymatus,10.31,rats,rats,280,108
+2015,Chagos,Ile_Poule,Fish,Plectroglyphidodon lacrymatus,10.48,rats,rats,280,108
+2015,Chagos,Ile_Poule,Fish,Plectroglyphidodon lacrymatus,10.26,rats,rats,280,108
+2015,Chagos,Ile_Poule,Leaves,Scaevola taccada,-1.94,rats,rats,NA,108
+2015,Chagos,Ile_Poule,Leaves,Scaevola taccada,-3.61,rats,rats,NA,108
+2015,Chagos,Ile_Poule,Leaves,Scaevola taccada,-2.91,rats,rats,NA,108
+2015,Chagos,Ile_Poule,Leaves,Scaevola taccada,-2.96,rats,rats,NA,108
+2015,Chagos,Ile_Poule,Leaves,Scaevola taccada,-2.38,rats,rats,NA,108
+2015,Chagos,Ile_Poule,Leaves,Scaevola taccada,-2.94,rats,rats,NA,108
+2015,Chagos,Ile_Poule,Leaves,Scaevola taccada,-2.83,rats,rats,NA,108
+2015,Chagos,Ile_Poule,Leaves,Scaevola taccada,-3.21,rats,rats,NA,108
+2015,Chagos,Ile_Poule,Leaves,Scaevola taccada,-3.79,rats,rats,NA,108
+2015,Chagos,Ile_Poule,Leaves,Scaevola taccada,-3.13,rats,rats,NA,108
+2015,Chagos,Ile_Poule,Macroalgae,Halimeda,3.48,rats,rats,100,108
+2015,Chagos,Ile_Poule,Macroalgae,Halimeda,3.72,rats,rats,100,108
+2015,Chagos,Ile_Poule,Macroalgae,Halimeda,3.61,rats,rats,100,108
+2015,Chagos,Ile_Poule,Macroalgae,Halimeda,4.01,rats,rats,100,108
+2015,Chagos,Ile_Poule,Macroalgae,Halimeda,3.64,rats,rats,100,108
+2015,Chagos,Ile_Poule,Macroalgae,Halimeda,3.27,rats,rats,100,108
+2015,Chagos,Ile_Poule,Macroalgae,Halimeda,4.25,rats,rats,100,108
+2015,Chagos,Ile_Poule,Macroalgae,Halimeda,4,rats,rats,100,108
+2015,Chagos,Ile_Poule,Macroalgae,Halimeda,3.78,rats,rats,100,108
+2015,Chagos,Ile_Poule,Macroalgae,Halimeda,3.62,rats,rats,100,108
+2015,Chagos,Ile_Poule,Soil,Soil,2.35,rats,rats,NA,108
+2015,Chagos,Ile_Poule,Soil,Soil,3.64,rats,rats,NA,108
+2015,Chagos,Ile_Poule,Soil,Soil,4.26,rats,rats,NA,108
+2015,Chagos,Ile_Poule,Soil,Soil,4.69,rats,rats,NA,108
+2015,Chagos,Ile_Poule,Soil,Soil,1.88,rats,rats,NA,108
+2015,Chagos,Ile_Poule,Soil,Soil,3.55,rats,rats,NA,108
+2015,Chagos,Ile_Poule,Soil,Soil,4.31,rats,rats,NA,108
+2015,Chagos,Ile_Poule,Soil,Soil,2.2,rats,rats,NA,108
+2015,Chagos,Ile_Poule,Soil,Soil,3.31,rats,rats,NA,108
+2015,Chagos,Ile_Poule,Soil,Soil,1.87,rats,rats,NA,108
+2015,Chagos,Ile_Poule,Turf,Turf,5.71,rats,rats,280,108
+2015,Chagos,Ile_Poule,Turf,Turf,5.34,rats,rats,280,108
+2015,Chagos,Ile_Poule,Turf,Turf,5.58,rats,rats,280,108
+2015,Chagos,Ile_Poule,Turf,Turf,6.73,rats,rats,280,108
+2015,Chagos,Ile_Poule,Turf,Turf,4.78,rats,rats,280,108
+2015,Chagos,Ile_Poule,Turf,Turf,5.63,rats,rats,280,108
+2015,Chagos,Ile_Poule,Turf,Turf,5.32,rats,rats,280,108
+2015,Chagos,Ile_Poule,Turf,Turf,5.04,rats,rats,280,108
+2015,Chagos,Ile_Poule,Turf,Turf,5.46,rats,rats,280,108
+2015,Chagos,Ile_Poule,Turf,Turf,5.79,rats,rats,280,108
+2015,Chagos,Middle_Brother,Fish,Plectroglyphidodon lacrymatus,11.34,never_rats,never_rats,240,8
+2015,Chagos,Middle_Brother,Fish,Plectroglyphidodon lacrymatus,11.28,never_rats,never_rats,240,8
+2015,Chagos,Middle_Brother,Fish,Plectroglyphidodon lacrymatus,11.02,never_rats,never_rats,240,8
+2015,Chagos,Middle_Brother,Fish,Plectroglyphidodon lacrymatus,11.07,never_rats,never_rats,240,8
+2015,Chagos,Middle_Brother,Fish,Plectroglyphidodon lacrymatus,11.11,never_rats,never_rats,240,8
+2015,Chagos,Middle_Brother,Fish,Plectroglyphidodon lacrymatus,11.21,never_rats,never_rats,240,8
+2015,Chagos,Middle_Brother,Fish,Plectroglyphidodon lacrymatus,11,never_rats,never_rats,240,8
+2015,Chagos,Middle_Brother,Fish,Plectroglyphidodon lacrymatus,11.05,never_rats,never_rats,240,8
+2015,Chagos,Middle_Brother,Fish,Plectroglyphidodon lacrymatus,11.05,never_rats,never_rats,240,8
+2015,Chagos,Middle_Brother,Fish,Plectroglyphidodon lacrymatus,11.08,never_rats,never_rats,240,8
+2015,Chagos,Middle_Brother,Leaves,Scaevola taccada,8.35,never_rats,never_rats,NA,8
+2015,Chagos,Middle_Brother,Leaves,Scaevola taccada,8.6,never_rats,never_rats,NA,8
+2015,Chagos,Middle_Brother,Leaves,Scaevola taccada,8.15,never_rats,never_rats,NA,8
+2015,Chagos,Middle_Brother,Leaves,Scaevola taccada,7.73,never_rats,never_rats,NA,8
+2015,Chagos,Middle_Brother,Leaves,Scaevola taccada,9.4,never_rats,never_rats,NA,8
+2015,Chagos,Middle_Brother,Leaves,Scaevola taccada,8.98,never_rats,never_rats,NA,8
+2015,Chagos,Middle_Brother,Leaves,Scaevola taccada,8.86,never_rats,never_rats,NA,8
+2015,Chagos,Middle_Brother,Leaves,Scaevola taccada,9.96,never_rats,never_rats,NA,8
+2015,Chagos,Middle_Brother,Leaves,Scaevola taccada,10.83,never_rats,never_rats,NA,8
+2015,Chagos,Middle_Brother,Leaves,Scaevola taccada,7.51,never_rats,never_rats,NA,8
+2015,Chagos,Middle_Brother,Macroalgae,Halimeda,13.62,never_rats,never_rats,100,8
+2015,Chagos,Middle_Brother,Macroalgae,Halimeda,13.73,never_rats,never_rats,100,8
+2015,Chagos,Middle_Brother,Macroalgae,Halimeda,13.62,never_rats,never_rats,100,8
+2015,Chagos,Middle_Brother,Macroalgae,Halimeda,12.67,never_rats,never_rats,100,8
+2015,Chagos,Middle_Brother,Macroalgae,Halimeda,10.9,never_rats,never_rats,100,8
+2015,Chagos,Middle_Brother,Macroalgae,Halimeda,11.13,never_rats,never_rats,100,8
+2015,Chagos,Middle_Brother,Macroalgae,Halimeda,11.16,never_rats,never_rats,100,8
+2015,Chagos,Middle_Brother,Macroalgae,Halimeda,13.99,never_rats,never_rats,100,8
+2015,Chagos,Middle_Brother,Macroalgae,Halimeda,13.57,never_rats,never_rats,100,8
+2015,Chagos,Middle_Brother,Macroalgae,Halimeda,11.18,never_rats,never_rats,100,8
+2015,Chagos,Middle_Brother,Soil,Soil,13.44,never_rats,never_rats,NA,8
+2015,Chagos,Middle_Brother,Soil,Soil,12.73,never_rats,never_rats,NA,8
+2015,Chagos,Middle_Brother,Soil,Soil,12.52,never_rats,never_rats,NA,8
+2015,Chagos,Middle_Brother,Soil,Soil,12.52,never_rats,never_rats,NA,8
+2015,Chagos,Middle_Brother,Soil,Soil,13.49,never_rats,never_rats,NA,8
+2015,Chagos,Middle_Brother,Soil,Soil,13.78,never_rats,never_rats,NA,8
+2015,Chagos,Middle_Brother,Soil,Soil,13.34,never_rats,never_rats,NA,8
+2015,Chagos,Middle_Brother,Soil,Soil,12.6,never_rats,never_rats,NA,8
+2015,Chagos,Middle_Brother,Soil,Soil,15.41,never_rats,never_rats,NA,8
+2015,Chagos,Middle_Brother,Turf,Turf,5.31,never_rats,never_rats,240,8
+2015,Chagos,Middle_Brother,Turf,Turf,5.07,never_rats,never_rats,240,8
+2015,Chagos,Middle_Brother,Turf,Turf,5.04,never_rats,never_rats,240,8
+2015,Chagos,Middle_Brother,Turf,Turf,4.64,never_rats,never_rats,240,8
+2015,Chagos,Middle_Brother,Turf,Turf,4.6,never_rats,never_rats,240,8
+2015,Chagos,Middle_Brother,Turf,Turf,5.05,never_rats,never_rats,240,8
+2015,Chagos,Middle_Brother,Turf,Turf,4.29,never_rats,never_rats,240,8
+2015,Chagos,Middle_Brother,Turf,Turf,4.98,never_rats,never_rats,240,8
+2015,Chagos,Middle_Brother,Turf,Turf,4.63,never_rats,never_rats,240,8
+2015,Chagos,Middle_Brother,Turf,Turf,5.48,never_rats,never_rats,240,8
+2015,Chagos,Nelson_Island,Leaves,Scaevola taccada,5.95,never_rats,never_rats,NA,81
+2015,Chagos,Nelson_Island,Leaves,Scaevola taccada,5.83,never_rats,never_rats,NA,81
+2015,Chagos,Nelson_Island,Leaves,Scaevola taccada,8.04,never_rats,never_rats,NA,81
+2015,Chagos,Nelson_Island,Leaves,Scaevola taccada,6.91,never_rats,never_rats,NA,81
+2015,Chagos,Nelson_Island,Leaves,Scaevola taccada,8.43,never_rats,never_rats,NA,81
+2015,Chagos,Nelson_Island,Leaves,Scaevola taccada,8.23,never_rats,never_rats,NA,81
+2015,Chagos,Nelson_Island,Leaves,Scaevola taccada,7.7,never_rats,never_rats,NA,81
+2015,Chagos,Nelson_Island,Leaves,Scaevola taccada,6.46,never_rats,never_rats,NA,81
+2015,Chagos,Nelson_Island,Leaves,Scaevola taccada,8.65,never_rats,never_rats,NA,81
+2015,Chagos,Nelson_Island,Leaves,Scaevola taccada,8.35,never_rats,never_rats,NA,81
+2015,Chagos,Nelson_Island,Macroalgae,Halimeda,7.63,never_rats,never_rats,100,81
+2015,Chagos,Nelson_Island,Macroalgae,Halimeda,7.06,never_rats,never_rats,100,81
+2015,Chagos,Nelson_Island,Macroalgae,Halimeda,7.38,never_rats,never_rats,100,81
+2015,Chagos,Nelson_Island,Macroalgae,Halimeda,10.11,never_rats,never_rats,100,81
+2015,Chagos,Nelson_Island,Macroalgae,Halimeda,8.8,never_rats,never_rats,100,81
+2015,Chagos,Nelson_Island,Macroalgae,Halimeda,7.73,never_rats,never_rats,100,81
+2015,Chagos,Nelson_Island,Macroalgae,Halimeda,9.39,never_rats,never_rats,100,81
+2015,Chagos,Nelson_Island,Macroalgae,Halimeda,9.27,never_rats,never_rats,100,81
+2015,Chagos,Nelson_Island,Macroalgae,Halimeda,7.46,never_rats,never_rats,100,81
+2015,Chagos,Nelson_Island,Macroalgae,Halimeda,8.3,never_rats,never_rats,100,81
+2015,Chagos,Nelson_Island,Soil,Soil,13.82,never_rats,never_rats,NA,81
+2015,Chagos,Nelson_Island,Soil,Soil,14.41,never_rats,never_rats,NA,81
+2015,Chagos,Nelson_Island,Soil,Soil,14.01,never_rats,never_rats,NA,81
+2015,Chagos,Nelson_Island,Soil,Soil,13.85,never_rats,never_rats,NA,81
+2015,Chagos,Nelson_Island,Soil,Soil,15.83,never_rats,never_rats,NA,81
+2015,Chagos,Nelson_Island,Soil,Soil,15.58,never_rats,never_rats,NA,81
+2015,Chagos,Nelson_Island,Soil,Soil,11.1,never_rats,never_rats,NA,81
+2015,Chagos,Nelson_Island,Soil,Soil,15.71,never_rats,never_rats,NA,81
+2015,Chagos,Nelson_Island,Soil,Soil,16.89,never_rats,never_rats,NA,81
+2015,Chagos,Nelson_Island,Soil,Soil,16.23,never_rats,never_rats,NA,81
+2015,Chagos,Nelson_Island,Turf,Turf,4.57,never_rats,never_rats,260,81
+2015,Chagos,Nelson_Island,Turf,Turf,5.67,never_rats,never_rats,260,81
+2015,Chagos,Nelson_Island,Turf,Turf,5.58,never_rats,never_rats,260,81
+2015,Chagos,Nelson_Island,Turf,Turf,6.48,never_rats,never_rats,260,81
+2015,Chagos,Nelson_Island,Turf,Turf,7.2,never_rats,never_rats,260,81
+2015,Chagos,Nelson_Island,Turf,Turf,6.9,never_rats,never_rats,260,81
+2015,Chagos,Nelson_Island,Turf,Turf,4.97,never_rats,never_rats,260,81
+2015,Chagos,Nelson_Island,Turf,Turf,5.08,never_rats,never_rats,260,81
+2015,Chagos,Nelson_Island,Turf,Turf,4.73,never_rats,never_rats,260,81
+2015,Chagos,Nelson_Island,Turf,Turf,4.87,never_rats,never_rats,260,81
+2015,Chagos,PB_Ile_Anglaise,Fish,Plectroglyphidodon lacrymatus,10.71,rats,rats,240,12
+2015,Chagos,PB_Ile_Anglaise,Fish,Plectroglyphidodon lacrymatus,10.56,rats,rats,240,12
+2015,Chagos,PB_Ile_Anglaise,Fish,Plectroglyphidodon lacrymatus,10.45,rats,rats,240,12
+2015,Chagos,PB_Ile_Anglaise,Fish,Plectroglyphidodon lacrymatus,10.91,rats,rats,240,12
+2015,Chagos,PB_Ile_Anglaise,Fish,Plectroglyphidodon lacrymatus,9.96,rats,rats,240,12
+2015,Chagos,PB_Ile_Anglaise,Fish,Plectroglyphidodon lacrymatus,11.06,rats,rats,240,12
+2015,Chagos,PB_Ile_Anglaise,Fish,Plectroglyphidodon lacrymatus,9.69,rats,rats,240,12
+2015,Chagos,PB_Ile_Anglaise,Fish,Plectroglyphidodon lacrymatus,10.74,rats,rats,240,12
+2015,Chagos,PB_Ile_Anglaise,Fish,Plectroglyphidodon lacrymatus,10.5,rats,rats,240,12
+2015,Chagos,PB_Ile_Anglaise,Fish,Plectroglyphidodon lacrymatus,10.07,rats,rats,240,12
+2015,Chagos,PB_Ile_Anglaise,Leaves,Scaevola taccada,-4.33,rats,rats,NA,12
+2015,Chagos,PB_Ile_Anglaise,Leaves,Scaevola taccada,-3.84,rats,rats,NA,12
+2015,Chagos,PB_Ile_Anglaise,Leaves,Scaevola taccada,-4.78,rats,rats,NA,12
+2015,Chagos,PB_Ile_Anglaise,Leaves,Scaevola taccada,-4.65,rats,rats,NA,12
+2015,Chagos,PB_Ile_Anglaise,Leaves,Scaevola taccada,-0.8,rats,rats,NA,12
+2015,Chagos,PB_Ile_Anglaise,Leaves,Scaevola taccada,-5.26,rats,rats,NA,12
+2015,Chagos,PB_Ile_Anglaise,Leaves,Scaevola taccada,-2.87,rats,rats,NA,12
+2015,Chagos,PB_Ile_Anglaise,Leaves,Scaevola taccada,-4.55,rats,rats,NA,12
+2015,Chagos,PB_Ile_Anglaise,Leaves,Scaevola taccada,-2.97,rats,rats,NA,12
+2015,Chagos,PB_Ile_Anglaise,Leaves,Scaevola taccada,-3.75,rats,rats,NA,12
+2015,Chagos,PB_Ile_Anglaise,Macroalgae,Halimeda,5.28,rats,rats,100,12
+2015,Chagos,PB_Ile_Anglaise,Macroalgae,Halimeda,5,rats,rats,100,12
+2015,Chagos,PB_Ile_Anglaise,Macroalgae,Halimeda,-1.21,rats,rats,100,12
+2015,Chagos,PB_Ile_Anglaise,Macroalgae,Halimeda,5.06,rats,rats,100,12
+2015,Chagos,PB_Ile_Anglaise,Macroalgae,Halimeda,5.66,rats,rats,100,12
+2015,Chagos,PB_Ile_Anglaise,Macroalgae,Halimeda,5.32,rats,rats,100,12
+2015,Chagos,PB_Ile_Anglaise,Macroalgae,Halimeda,4.97,rats,rats,100,12
+2015,Chagos,PB_Ile_Anglaise,Macroalgae,Halimeda,4.88,rats,rats,100,12
+2015,Chagos,PB_Ile_Anglaise,Macroalgae,Halimeda,4.36,rats,rats,100,12
+2015,Chagos,PB_Ile_Anglaise,Macroalgae,Halimeda,5.17,rats,rats,100,12
+2015,Chagos,PB_Ile_Anglaise,Soil,Soil,1.22,rats,rats,NA,12
+2015,Chagos,PB_Ile_Anglaise,Soil,Soil,1.73,rats,rats,NA,12
+2015,Chagos,PB_Ile_Anglaise,Soil,Soil,2.17,rats,rats,NA,12
+2015,Chagos,PB_Ile_Anglaise,Soil,Soil,2.98,rats,rats,NA,12
+2015,Chagos,PB_Ile_Anglaise,Soil,Soil,1.18,rats,rats,NA,12
+2015,Chagos,PB_Ile_Anglaise,Soil,Soil,1.59,rats,rats,NA,12
+2015,Chagos,PB_Ile_Anglaise,Soil,Soil,2.08,rats,rats,NA,12
+2015,Chagos,PB_Ile_Anglaise,Soil,Soil,2.83,rats,rats,NA,12
+2015,Chagos,PB_Ile_Anglaise,Soil,Soil,2.31,rats,rats,NA,12
+2015,Chagos,PB_Ile_Anglaise,Soil,Soil,2.59,rats,rats,NA,12
+2015,Chagos,PB_Ile_Anglaise,Turf,Turf,5.33,rats,rats,240,12
+2015,Chagos,PB_Ile_Anglaise,Turf,Turf,4.65,rats,rats,240,12
+2015,Chagos,PB_Ile_Anglaise,Turf,Turf,5.37,rats,rats,240,12
+2015,Chagos,PB_Ile_Anglaise,Turf,Turf,5.18,rats,rats,240,12
+2015,Chagos,PB_Ile_Anglaise,Turf,Turf,5.2,rats,rats,240,12
+2015,Chagos,PB_Ile_Anglaise,Turf,Turf,5.47,rats,rats,240,12
+2015,Chagos,PB_Ile_Anglaise,Turf,Turf,4.72,rats,rats,240,12
+2015,Chagos,PB_Ile_Anglaise,Turf,Turf,4.92,rats,rats,240,12
+2015,Chagos,PB_Ile_Anglaise,Turf,Turf,5.11,rats,rats,240,12
+2015,Chagos,PB_Ile_Anglaise,Turf,Turf,5.03,rats,rats,240,12
+2015,Chagos,Sal_Ile_Anglaise,Fish,Plectroglyphidodon lacrymatus,10.26,rats,rats,280,76
+2015,Chagos,Sal_Ile_Anglaise,Fish,Plectroglyphidodon lacrymatus,9.98,rats,rats,280,76
+2015,Chagos,Sal_Ile_Anglaise,Fish,Plectroglyphidodon lacrymatus,10.72,rats,rats,280,76
+2015,Chagos,Sal_Ile_Anglaise,Fish,Plectroglyphidodon lacrymatus,9.99,rats,rats,280,76
+2015,Chagos,Sal_Ile_Anglaise,Fish,Plectroglyphidodon lacrymatus,10.3,rats,rats,280,76
+2015,Chagos,Sal_Ile_Anglaise,Fish,Plectroglyphidodon lacrymatus,10.1,rats,rats,280,76
+2015,Chagos,Sal_Ile_Anglaise,Fish,Plectroglyphidodon lacrymatus,10,rats,rats,280,76
+2015,Chagos,Sal_Ile_Anglaise,Fish,Plectroglyphidodon lacrymatus,10.13,rats,rats,280,76
+2015,Chagos,Sal_Ile_Anglaise,Fish,Plectroglyphidodon lacrymatus,10,rats,rats,280,76
+2015,Chagos,Sal_Ile_Anglaise,Fish,Plectroglyphidodon lacrymatus,10.68,rats,rats,280,76
+2015,Chagos,Sal_Ile_Anglaise,Leaves,Scaevola taccada,-4.44,rats,rats,NA,76
+2015,Chagos,Sal_Ile_Anglaise,Leaves,Scaevola taccada,-3.12,rats,rats,NA,76
+2015,Chagos,Sal_Ile_Anglaise,Leaves,Scaevola taccada,-3.63,rats,rats,NA,76
+2015,Chagos,Sal_Ile_Anglaise,Leaves,Scaevola taccada,-4.02,rats,rats,NA,76
+2015,Chagos,Sal_Ile_Anglaise,Leaves,Scaevola taccada,-5.23,rats,rats,NA,76
+2015,Chagos,Sal_Ile_Anglaise,Leaves,Scaevola taccada,-4.49,rats,rats,NA,76
+2015,Chagos,Sal_Ile_Anglaise,Leaves,Scaevola taccada,-2.49,rats,rats,NA,76
+2015,Chagos,Sal_Ile_Anglaise,Leaves,Scaevola taccada,-4.26,rats,rats,NA,76
+2015,Chagos,Sal_Ile_Anglaise,Leaves,Scaevola taccada,-2.98,rats,rats,NA,76
+2015,Chagos,Sal_Ile_Anglaise,Leaves,Scaevola taccada,-4.43,rats,rats,NA,76
+2015,Chagos,Sal_Ile_Anglaise,Macroalgae,Halimeda,3.11,rats,rats,100,76
+2015,Chagos,Sal_Ile_Anglaise,Macroalgae,Halimeda,4.68,rats,rats,100,76
+2015,Chagos,Sal_Ile_Anglaise,Macroalgae,Halimeda,3.54,rats,rats,100,76
+2015,Chagos,Sal_Ile_Anglaise,Macroalgae,Halimeda,4.74,rats,rats,100,76
+2015,Chagos,Sal_Ile_Anglaise,Macroalgae,Halimeda,5.05,rats,rats,100,76
+2015,Chagos,Sal_Ile_Anglaise,Macroalgae,Halimeda,3.51,rats,rats,100,76
+2015,Chagos,Sal_Ile_Anglaise,Macroalgae,Halimeda,4.09,rats,rats,100,76
+2015,Chagos,Sal_Ile_Anglaise,Macroalgae,Halimeda,2.72,rats,rats,100,76
+2015,Chagos,Sal_Ile_Anglaise,Macroalgae,Halimeda,4.73,rats,rats,100,76
+2015,Chagos,Sal_Ile_Anglaise,Macroalgae,Halimeda,3.99,rats,rats,100,76
+2015,Chagos,Sal_Ile_Anglaise,Soil,Soil,1.92,rats,rats,NA,76
+2015,Chagos,Sal_Ile_Anglaise,Soil,Soil,1.54,rats,rats,NA,76
+2015,Chagos,Sal_Ile_Anglaise,Soil,Soil,1.3,rats,rats,NA,76
+2015,Chagos,Sal_Ile_Anglaise,Soil,Soil,1.63,rats,rats,NA,76
+2015,Chagos,Sal_Ile_Anglaise,Soil,Soil,1.29,rats,rats,NA,76
+2015,Chagos,Sal_Ile_Anglaise,Soil,Soil,2.98,rats,rats,NA,76
+2015,Chagos,Sal_Ile_Anglaise,Soil,Soil,0.84,rats,rats,NA,76
+2015,Chagos,Sal_Ile_Anglaise,Soil,Soil,1.83,rats,rats,NA,76
+2015,Chagos,Sal_Ile_Anglaise,Soil,Soil,3.07,rats,rats,NA,76
+2015,Chagos,Sal_Ile_Anglaise,Soil,Soil,3.82,rats,rats,NA,76
+2015,Chagos,Sal_Ile_Anglaise,Turf,Turf,5.41,rats,rats,280,76
+2015,Chagos,Sal_Ile_Anglaise,Turf,Turf,4.58,rats,rats,280,76
+2015,Chagos,Sal_Ile_Anglaise,Turf,Turf,2.06,rats,rats,280,76
+2015,Chagos,Sal_Ile_Anglaise,Turf,Turf,3.81,rats,rats,280,76
+2015,Chagos,Sal_Ile_Anglaise,Turf,Turf,2.85,rats,rats,280,76
+2015,Chagos,Sal_Ile_Anglaise,Turf,Turf,2.24,rats,rats,280,76
+2015,Chagos,Sal_Ile_Anglaise,Turf,Turf,2.95,rats,rats,280,76
+2015,Chagos,Sal_Ile_Anglaise,Turf,Turf,5.1,rats,rats,280,76
+2015,Chagos,Sal_Ile_Anglaise,Turf,Turf,3.24,rats,rats,280,76
+2015,Chagos,Sal_Ile_Anglaise,Turf,Turf,2.76,rats,rats,280,76
+2015,Chagos,South_Brother,Fish,Plectroglyphidodon lacrymatus,11.22,never_rats,never_rats,150,23
+2015,Chagos,South_Brother,Fish,Plectroglyphidodon lacrymatus,10.94,never_rats,never_rats,150,23
+2015,Chagos,South_Brother,Fish,Plectroglyphidodon lacrymatus,10.91,never_rats,never_rats,150,23
+2015,Chagos,South_Brother,Fish,Plectroglyphidodon lacrymatus,11.11,never_rats,never_rats,150,23
+2015,Chagos,South_Brother,Fish,Plectroglyphidodon lacrymatus,11.18,never_rats,never_rats,150,23
+2015,Chagos,South_Brother,Fish,Plectroglyphidodon lacrymatus,10.91,never_rats,never_rats,150,23
+2015,Chagos,South_Brother,Fish,Plectroglyphidodon lacrymatus,11.32,never_rats,never_rats,150,23
+2015,Chagos,South_Brother,Fish,Plectroglyphidodon lacrymatus,11.07,never_rats,never_rats,150,23
+2015,Chagos,South_Brother,Fish,Plectroglyphidodon lacrymatus,11.19,never_rats,never_rats,150,23
+2015,Chagos,South_Brother,Fish,Plectroglyphidodon lacrymatus,10.77,never_rats,never_rats,150,23
+2015,Chagos,South_Brother,Leaves,Scaevola taccada,8.59,never_rats,never_rats,NA,23
+2015,Chagos,South_Brother,Leaves,Scaevola taccada,12.47,never_rats,never_rats,NA,23
+2015,Chagos,South_Brother,Leaves,Scaevola taccada,11.81,never_rats,never_rats,NA,23
+2015,Chagos,South_Brother,Leaves,Scaevola taccada,10.82,never_rats,never_rats,NA,23
+2015,Chagos,South_Brother,Leaves,Scaevola taccada,12.77,never_rats,never_rats,NA,23
+2015,Chagos,South_Brother,Leaves,Scaevola taccada,12.03,never_rats,never_rats,NA,23
+2015,Chagos,South_Brother,Leaves,Scaevola taccada,10.82,never_rats,never_rats,NA,23
+2015,Chagos,South_Brother,Leaves,Scaevola taccada,11.86,never_rats,never_rats,NA,23
+2015,Chagos,South_Brother,Leaves,Scaevola taccada,13.49,never_rats,never_rats,NA,23
+2015,Chagos,South_Brother,Leaves,Scaevola taccada,11.19,never_rats,never_rats,NA,23
+2015,Chagos,South_Brother,Macroalgae,Halimeda,9.54,never_rats,never_rats,100,23
+2015,Chagos,South_Brother,Macroalgae,Halimeda,9.72,never_rats,never_rats,100,23
+2015,Chagos,South_Brother,Macroalgae,Halimeda,9.89,never_rats,never_rats,100,23
+2015,Chagos,South_Brother,Macroalgae,Halimeda,8.95,never_rats,never_rats,100,23
+2015,Chagos,South_Brother,Macroalgae,Halimeda,10.06,never_rats,never_rats,100,23
+2015,Chagos,South_Brother,Macroalgae,Halimeda,9.39,never_rats,never_rats,100,23
+2015,Chagos,South_Brother,Macroalgae,Halimeda,9.97,never_rats,never_rats,100,23
+2015,Chagos,South_Brother,Macroalgae,Halimeda,10.89,never_rats,never_rats,100,23
+2015,Chagos,South_Brother,Macroalgae,Halimeda,9.68,never_rats,never_rats,100,23
+2015,Chagos,South_Brother,Macroalgae,Halimeda,9.66,never_rats,never_rats,100,23
+2015,Chagos,South_Brother,Soil,Soil,14.58,never_rats,never_rats,NA,23
+2015,Chagos,South_Brother,Soil,Soil,13.29,never_rats,never_rats,NA,23
+2015,Chagos,South_Brother,Soil,Soil,15.61,never_rats,never_rats,NA,23
+2015,Chagos,South_Brother,Soil,Soil,14.82,never_rats,never_rats,NA,23
+2015,Chagos,South_Brother,Soil,Soil,15.15,never_rats,never_rats,NA,23
+2015,Chagos,South_Brother,Soil,Soil,14.39,never_rats,never_rats,NA,23
+2015,Chagos,South_Brother,Soil,Soil,15.06,never_rats,never_rats,NA,23
+2015,Chagos,South_Brother,Soil,Soil,13.8,never_rats,never_rats,NA,23
+2015,Chagos,South_Brother,Soil,Soil,14.63,never_rats,never_rats,NA,23
+2015,Chagos,South_Brother,Soil,Soil,13.57,never_rats,never_rats,NA,23
+2015,Chagos,South_Brother,Turf,Turf,6.27,never_rats,never_rats,150,23
+2015,Chagos,South_Brother,Turf,Turf,5.58,never_rats,never_rats,150,23
+2015,Chagos,South_Brother,Turf,Turf,5.91,never_rats,never_rats,150,23
+2015,Chagos,South_Brother,Turf,Turf,5.53,never_rats,never_rats,150,23
+2015,Chagos,South_Brother,Turf,Turf,6.01,never_rats,never_rats,150,23
+2015,Chagos,South_Brother,Turf,Turf,8.08,never_rats,never_rats,150,23
+2015,Chagos,South_Brother,Turf,Turf,6.22,never_rats,never_rats,150,23
+2015,Chagos,South_Brother,Turf,Turf,5.39,never_rats,never_rats,150,23
+2015,Chagos,South_Brother,Turf,Turf,5.81,never_rats,never_rats,150,23
+2015,Chagos,South_Brother,Turf,Turf,5.66,never_rats,never_rats,150,23
+2018,Chagos,Vache Marine,Fish,Plectroglyphidodon lacrymatus,11.57,derat,derat,200,14
+2018,Chagos,Vache Marine,Fish,Plectroglyphidodon lacrymatus,10.6,derat,derat,200,14
+2018,Chagos,Vache Marine,Fish,Plectroglyphidodon lacrymatus,11.21,derat,derat,200,14
+2018,Chagos,Vache Marine,Fish,Plectroglyphidodon lacrymatus,11.33,derat,derat,200,14
+2018,Chagos,Vache Marine,Fish,Plectroglyphidodon lacrymatus,10.96,derat,derat,200,14
+2018,Chagos,Vache Marine,Leaves,Scaevola taccada,5.64,derat,derat,NA,14
+2018,Chagos,Vache Marine,Leaves,Scaevola taccada,1.02,derat,derat,NA,14
+2018,Chagos,Vache Marine,Leaves,Scaevola taccada,8.12,derat,derat,NA,14
+2018,Chagos,Vache Marine,Leaves,Scaevola taccada,4.29,derat,derat,NA,14
+2018,Chagos,Vache Marine,Leaves,Scaevola taccada,7.92,derat,derat,NA,14
+2018,Chagos,Vache Marine,Leaves,Scaevola taccada,5.17,derat,derat,NA,14
+2018,Chagos,Vache Marine,Leaves,Scaevola taccada,3.72,derat,derat,NA,14
+2018,Chagos,Vache Marine,Leaves,Scaevola taccada,8.08,derat,derat,NA,14
+2018,Chagos,Vache Marine,Leaves,Scaevola taccada,6.13,derat,derat,NA,14
+2018,Chagos,Vache Marine,Leaves,Scaevola taccada,2.57,derat,derat,NA,14
+2018,Chagos,Vache Marine,Macroalgae,Halimeda,5.59,derat,derat,100,14
+2018,Chagos,Vache Marine,Macroalgae,Halimeda,6.16,derat,derat,100,14
+2018,Chagos,Vache Marine,Macroalgae,Halimeda,5.76,derat,derat,100,14
+2018,Chagos,Vache Marine,Macroalgae,Halimeda,6.28,derat,derat,100,14
+2018,Chagos,Vache Marine,Macroalgae,Halimeda,5.71,derat,derat,100,14
+2018,Chagos,Vache Marine,Macroalgae,Halimeda,6.52,derat,derat,100,14
+2018,Chagos,Vache Marine,Macroalgae,Halimeda,5.58,derat,derat,100,14
+2018,Chagos,Vache Marine,Macroalgae,Halimeda,6.47,derat,derat,100,14
+2018,Chagos,Vache Marine,Macroalgae,Halimeda,5.93,derat,derat,100,14
+2018,Chagos,Vache Marine,Macroalgae,Halimeda,7.21,derat,derat,100,14
+2018,Chagos,Vache Marine,Soil,Soil,5.76,derat,derat,NA,14
+2018,Chagos,Vache Marine,Soil,Soil,3.1,derat,derat,NA,14
+2018,Chagos,Vache Marine,Soil,Soil,5.66,derat,derat,NA,14
+2018,Chagos,Vache Marine,Soil,Soil,7.27,derat,derat,NA,14
+2018,Chagos,Vache Marine,Soil,Soil,5.05,derat,derat,NA,14
+2018,Chagos,Vache Marine,Soil,Soil,5.76,derat,derat,NA,14
+2018,Chagos,Vache Marine,Soil,Soil,5.01,derat,derat,NA,14
+2018,Chagos,Vache Marine,Soil,Soil,5.74,derat,derat,NA,14
+2018,Chagos,Vache Marine,Soil,Soil,5.41,derat,derat,NA,14
+2018,Chagos,Vache Marine,Soil,Soil,6,derat,derat,NA,14
+2018,Chagos,Vache Marine,Turf,Turf,6.16,derat,derat,200,14
+2018,Chagos,Vache Marine,Turf,Turf,6.58,derat,derat,200,14
+2018,Chagos,Vache Marine,Turf,Turf,5.98,derat,derat,200,14
+2018,Chagos,Vache Marine,Turf,Turf,6.16,derat,derat,200,14
+2018,Chagos,Vache Marine,Turf,Turf,3.05,derat,derat,200,14
+2018,Chagos,Vache Marine,Turf,Turf,6.76,derat,derat,200,14
+2018,Chagos,Vache Marine,Turf,Turf,6.57,derat,derat,200,14
+2018,Chagos,Vache Marine,Turf,Turf,6.64,derat,derat,200,14
+2018,Chagos,Vache Marine,Turf,Turf,6.71,derat,derat,200,14
+2018,Chagos,Vache Marine,Turf,Turf,6.04,derat,derat,200,14
+2019,Scattered Islands,Europa,Fish,Stegastes fasciolatus,8.22,rats,rats,321,2223
+2019,Scattered Islands,Europa,Fish,Stegastes fasciolatus,7.94,rats,rats,321,2223
+2019,Scattered Islands,Europa,Fish,Stegastes fasciolatus,8.27,rats,rats,321,2223
+2019,Scattered Islands,Europa,Fish,Stegastes fasciolatus,7.87,rats,rats,321,2223
+2019,Scattered Islands,Europa,Fish,Stegastes fasciolatus,7.91,rats,rats,321,2223
+2019,Scattered Islands,Europa,Fish,Stegastes fasciolatus,7.1,rats,rats,850,2223
+2019,Scattered Islands,Europa,Fish,Stegastes fasciolatus,7.22,rats,rats,850,2223
+2019,Scattered Islands,Europa,Fish,Stegastes fasciolatus,7.16,rats,rats,850,2223
+2019,Scattered Islands,Europa,Fish,Stegastes fasciolatus,6.89,rats,rats,850,2223
+2019,Scattered Islands,Europa,Fish,Stegastes fasciolatus,7.39,rats,rats,850,2223
+2019,Scattered Islands,Europa,Leaves,Suriana maritima,10.72,rats,rats,NA,2223
+2019,Scattered Islands,Europa,Leaves,Suriana maritima,11.32,rats,rats,NA,2223
+2019,Scattered Islands,Europa,Leaves,Suriana maritima,12.54,rats,rats,NA,2223
+2019,Scattered Islands,Europa,Leaves,Suriana maritima,5.36,rats,rats,NA,2223
+2019,Scattered Islands,Europa,Leaves,Suriana maritima,11.35,rats,rats,NA,2223
+2019,Scattered Islands,Europa,Macroalgae,Turbinaria,3.56,rats,rats,120,2223
+2019,Scattered Islands,Europa,Macroalgae,Turbinaria,3.65,rats,rats,120,2223
+2019,Scattered Islands,Europa,Macroalgae,Turbinaria,3.66,rats,rats,120,2223
+2019,Scattered Islands,Europa,Macroalgae,Turbinaria,3.82,rats,rats,120,2223
+2019,Scattered Islands,Europa,Macroalgae,Turbinaria,3.8,rats,rats,120,2223
+2019,Scattered Islands,Europa,Macroalgae,Turbinaria,3.4,rats,rats,670,2223
+2019,Scattered Islands,Europa,Macroalgae,Turbinaria,3.23,rats,rats,670,2223
+2019,Scattered Islands,Europa,Macroalgae,Turbinaria,3.28,rats,rats,670,2223
+2019,Scattered Islands,Europa,Macroalgae,Turbinaria,2.86,rats,rats,670,2223
+2019,Scattered Islands,Europa,Macroalgae,Turbinaria,3.34,rats,rats,670,2223
+2019,Scattered Islands,Europa,Soil,Soil,21.09,rats,rats,NA,2223
+2019,Scattered Islands,Europa,Soil,Soil,19.31,rats,rats,NA,2223
+2019,Scattered Islands,Europa,Soil,Soil,16.84,rats,rats,NA,2223
+2019,Scattered Islands,Europa,Soil,Soil,20.65,rats,rats,NA,2223
+2019,Scattered Islands,Europa,Soil,Soil,21.48,rats,rats,NA,2223
+2019,Scattered Islands,Europa,Turf,Turf,2.86,rats,rats,120,2223
+2019,Scattered Islands,Europa,Turf,Turf,3.68,rats,rats,120,2223
+2019,Scattered Islands,Europa,Turf,Turf,2.92,rats,rats,120,2223
+2019,Scattered Islands,Europa,Turf,Turf,3.71,rats,rats,120,2223
+2019,Scattered Islands,Europa,Turf,Turf,2.9,rats,rats,120,2223
+2019,Scattered Islands,Europa,Turf,Turf,3.15,rats,rats,670,2223
+2019,Scattered Islands,Europa,Turf,Turf,2.66,rats,rats,670,2223
+2019,Scattered Islands,Europa,Turf,Turf,3.33,rats,rats,670,2223
+2019,Scattered Islands,Europa,Turf,Turf,3.72,rats,rats,670,2223
+2019,Scattered Islands,Europa,Turf,Turf,3.5,rats,rats,670,2223
+2019,Scattered Islands,Europa,Turf,Turf,3.12,rats,rats,287,2223
+2019,Scattered Islands,Europa,Turf,Turf,3,rats,rats,287,2223
+2019,Scattered Islands,Europa,Turf,Turf,3.89,rats,rats,287,2223
+2019,Scattered Islands,Europa,Turf,Turf,2.93,rats,rats,287,2223
+2019,Scattered Islands,Europa,Turf,Turf,3.6,rats,rats,287,2223
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Fish,Stegastes fasciolatus,8.11,rats,rats,383,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Fish,Stegastes fasciolatus,8.53,rats,rats,383,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Fish,Stegastes fasciolatus,8.68,rats,rats,383,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Fish,Stegastes fasciolatus,8.59,rats,rats,383,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Fish,Stegastes fasciolatus,7.18,rats,rats,383,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Fish,Stegastes fasciolatus,8.91,rats,rats,280,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Fish,Stegastes fasciolatus,7.83,rats,rats,280,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Fish,Stegastes fasciolatus,8.39,rats,rats,430,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Fish,Stegastes fasciolatus,8.36,rats,rats,430,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Fish,Stegastes fasciolatus,8.38,rats,rats,430,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Fish,Stegastes fasciolatus,8.09,rats,rats,430,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Fish,Stegastes fasciolatus,7.57,rats,rats,430,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Leaves,Heliotropium forthiarum,7.24,rats,rats,NA,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Leaves,Heliotropium forthiarum,4.57,rats,rats,NA,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Leaves,Heliotropium forthiarum,2.34,rats,rats,NA,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Leaves,Heliotropium forthiarum,2.41,rats,rats,NA,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Leaves,Heliotropium forthiarum,4.4,rats,rats,NA,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Leaves,Heliotropium forthiarum,1.81,rats,rats,NA,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Leaves,Heliotropium forthiarum,2.44,rats,rats,NA,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Leaves,Heliotropium forthiarum,4.51,rats,rats,NA,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Leaves,Heliotropium forthiarum,6.78,rats,rats,NA,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Leaves,Heliotropium forthiarum,4.36,rats,rats,NA,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Leaves,Scaevola taccada,0.9,rats,rats,NA,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Leaves,Scaevola taccada,0.78,rats,rats,NA,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Leaves,Scaevola taccada,2.07,rats,rats,NA,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Leaves,Scaevola taccada,2.58,rats,rats,NA,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Leaves,Scaevola taccada,0.95,rats,rats,NA,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Leaves,Suriana maritima,1.54,rats,rats,NA,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Leaves,Suriana maritima,5.8,rats,rats,NA,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Leaves,Suriana maritima,5.7,rats,rats,NA,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Leaves,Suriana maritima,3.22,rats,rats,NA,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Leaves,Suriana maritima,3.33,rats,rats,NA,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Macroalgae,Halimeda,2.12,rats,rats,141,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Macroalgae,Halimeda,2.75,rats,rats,141,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Macroalgae,Halimeda,4.48,rats,rats,141,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Macroalgae,Halimeda,2.33,rats,rats,141,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Macroalgae,Halimeda,1.49,rats,rats,141,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Macroalgae,Halimeda,3.74,rats,rats,280,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Macroalgae,Halimeda,3.26,rats,rats,280,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Macroalgae,Halimeda,3.46,rats,rats,280,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Macroalgae,Halimeda,3.66,rats,rats,280,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Macroalgae,Halimeda,3.68,rats,rats,280,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Macroalgae,Halimeda,3.83,rats,rats,430,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Macroalgae,Halimeda,3.57,rats,rats,430,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Macroalgae,Halimeda,3.03,rats,rats,430,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Macroalgae,Halimeda,3.47,rats,rats,430,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Macroalgae,Halimeda,3.83,rats,rats,430,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Soil,Soil,3.88,rats,rats,NA,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Soil,Soil,5.26,rats,rats,NA,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Soil,Soil,4.53,rats,rats,NA,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Soil,Soil,6.49,rats,rats,NA,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Soil,Soil,9.72,rats,rats,NA,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Turf,Turf,1.27,rats,rats,141,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Turf,Turf,0.63,rats,rats,141,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Turf,Turf,1.54,rats,rats,141,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Turf,Turf,2.03,rats,rats,141,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Turf,Turf,1.09,rats,rats,141,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Turf,Turf,4.7,rats,rats,280,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Turf,Turf,4.22,rats,rats,280,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Turf,Turf,3.69,rats,rats,280,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Turf,Turf,3.44,rats,rats,280,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Turf,Turf,3.99,rats,rats,280,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Turf,Turf,3.67,rats,rats,430,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Turf,Turf,3.09,rats,rats,430,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Turf,Turf,2.97,rats,rats,430,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Turf,Turf,4.12,rats,rats,430,470
+2019,Scattered Islands,Glorieuses-Grande Glorieuse,Turf,Turf,3.02,rats,rats,430,470
+2019,Scattered Islands,Glorieuses-Ile du Lys,Fish,Plectroglyphidodon lacrymatus,9.65,derat,derat,325,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Fish,Plectroglyphidodon lacrymatus,10.58,derat,derat,325,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Fish,Plectroglyphidodon lacrymatus,9.72,derat,derat,325,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Fish,Plectroglyphidodon lacrymatus,9.75,derat,derat,325,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Fish,Plectroglyphidodon lacrymatus,9.82,derat,derat,325,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Fish,Plectroglyphidodon lacrymatus,10.06,derat,derat,325,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Fish,Plectroglyphidodon lacrymatus,9.64,derat,derat,325,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Fish,Plectroglyphidodon lacrymatus,9.96,derat,derat,325,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Fish,Plectroglyphidodon lacrymatus,10.29,derat,derat,325,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Fish,Plectroglyphidodon lacrymatus,9.64,derat,derat,325,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Fish,Stegastes fasciolatus,9.71,derat,derat,325,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Leaves,Heliotropium forthiarum,9,derat,derat,NA,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Leaves,Heliotropium forthiarum,5.53,derat,derat,NA,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Leaves,Heliotropium forthiarum,8.36,derat,derat,NA,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Leaves,Heliotropium forthiarum,8.12,derat,derat,NA,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Leaves,Heliotropium forthiarum,8.94,derat,derat,NA,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Leaves,Heliotropium forthiarum,9.2,derat,derat,NA,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Leaves,Heliotropium forthiarum,8.4,derat,derat,NA,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Leaves,Heliotropium forthiarum,9.51,derat,derat,NA,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Leaves,Heliotropium forthiarum,8.87,derat,derat,NA,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Leaves,Heliotropium forthiarum,7.9,derat,derat,NA,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Leaves,Scaevola taccada,6.67,derat,derat,NA,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Leaves,Scaevola taccada,6.85,derat,derat,NA,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Leaves,Scaevola taccada,6.67,derat,derat,NA,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Leaves,Scaevola taccada,7.04,derat,derat,NA,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Leaves,Scaevola taccada,7.54,derat,derat,NA,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Leaves,Suriana maritima,1.01,derat,derat,NA,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Leaves,Suriana maritima,-0.71,derat,derat,NA,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Leaves,Suriana maritima,4.26,derat,derat,NA,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Leaves,Suriana maritima,2.41,derat,derat,NA,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Leaves,Suriana maritima,5.49,derat,derat,NA,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Halimeda,4.25,derat,derat,325,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Halimeda,3.84,derat,derat,325,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Halimeda,4.32,derat,derat,325,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Halimeda,3.89,derat,derat,325,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Halimeda,3.78,derat,derat,325,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Halimeda,3.11,derat,derat,270,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Halimeda,3.12,derat,derat,270,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Halimeda,3.48,derat,derat,270,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Halimeda,4.07,derat,derat,270,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Halimeda,4.81,derat,derat,270,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Halimeda,2.63,derat,derat,925,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Halimeda,3.51,derat,derat,925,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Halimeda,3.51,derat,derat,925,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Halimeda,3.13,derat,derat,925,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Halimeda,2.99,derat,derat,925,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Halimeda,7.08,derat,derat,153,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Halimeda,6.95,derat,derat,153,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Halimeda,4.86,derat,derat,153,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Halimeda,6.74,derat,derat,153,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Halimeda,5.51,derat,derat,153,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Halimeda,4.08,derat,derat,220,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Halimeda,3.72,derat,derat,220,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Halimeda,3.67,derat,derat,220,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Halimeda,4.43,derat,derat,220,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Halimeda,3.05,derat,derat,220,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Turbinaria,2.88,derat,derat,660,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Turbinaria,2.96,derat,derat,660,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Turbinaria,3.8,derat,derat,660,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Turbinaria,3.17,derat,derat,660,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Turbinaria,3.32,derat,derat,660,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Turbinaria,4.5,derat,derat,153,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Turbinaria,4.66,derat,derat,153,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Turbinaria,4.77,derat,derat,153,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Turbinaria,4.42,derat,derat,153,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Macroalgae,Turbinaria,3.06,derat,derat,153,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Soil,Soil,13.77,derat,derat,NA,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Soil,Soil,14.56,derat,derat,NA,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Soil,Soil,14.26,derat,derat,NA,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Soil,Soil,18.47,derat,derat,NA,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Soil,Soil,16.5,derat,derat,NA,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Turf,Turf,4.36,derat,derat,325,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Turf,Turf,3.34,derat,derat,325,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Turf,Turf,3.39,derat,derat,325,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Turf,Turf,4.09,derat,derat,325,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Turf,Turf,3.93,derat,derat,325,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Turf,Turf,2.1,derat,derat,270,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Turf,Turf,3.41,derat,derat,270,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Turf,Turf,3.57,derat,derat,270,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Turf,Turf,3.48,derat,derat,270,12
+2019,Scattered Islands,Glorieuses-Ile du Lys,Turf,Turf,1.91,derat,derat,270,12
+2019,Scattered Islands,Juan de Nova,Fish,Plectroglyphidodon lacrymatus,9.3,rats,rats,1000,561
+2019,Scattered Islands,Juan de Nova,Fish,Plectroglyphidodon lacrymatus,9.19,rats,rats,1000,561
+2019,Scattered Islands,Juan de Nova,Fish,Stegastes fasciolatus,7.5,rats,rats,810,561
+2019,Scattered Islands,Juan de Nova,Fish,Stegastes fasciolatus,8.25,rats,rats,810,561
+2019,Scattered Islands,Juan de Nova,Fish,Stegastes fasciolatus,7.06,rats,rats,925,561
+2019,Scattered Islands,Juan de Nova,Fish,Stegastes fasciolatus,8.07,rats,rats,925,561
+2019,Scattered Islands,Juan de Nova,Fish,Stegastes fasciolatus,8.11,rats,rats,925,561
+2019,Scattered Islands,Juan de Nova,Fish,Stegastes fasciolatus,7.78,rats,rats,925,561
+2019,Scattered Islands,Juan de Nova,Fish,Stegastes fasciolatus,8.6,rats,rats,1060,561
+2019,Scattered Islands,Juan de Nova,Fish,Stegastes fasciolatus,7.16,rats,rats,1060,561
+2019,Scattered Islands,Juan de Nova,Fish,Stegastes fasciolatus,8.07,rats,rats,1060,561
+2019,Scattered Islands,Juan de Nova,Leaves,Heliotropium forthiarum,9.38,rats,rats,NA,561
+2019,Scattered Islands,Juan de Nova,Leaves,Heliotropium forthiarum,11.53,rats,rats,NA,561
+2019,Scattered Islands,Juan de Nova,Leaves,Heliotropium forthiarum,9.95,rats,rats,NA,561
+2019,Scattered Islands,Juan de Nova,Leaves,Heliotropium forthiarum,8.99,rats,rats,NA,561
+2019,Scattered Islands,Juan de Nova,Leaves,Heliotropium forthiarum,8.51,rats,rats,NA,561
+2019,Scattered Islands,Juan de Nova,Leaves,Heliotropium forthiarum,8.2,rats,rats,NA,561
+2019,Scattered Islands,Juan de Nova,Leaves,Heliotropium forthiarum,10.93,rats,rats,NA,561
+2019,Scattered Islands,Juan de Nova,Leaves,Heliotropium forthiarum,9.59,rats,rats,NA,561
+2019,Scattered Islands,Juan de Nova,Leaves,Heliotropium forthiarum,8.95,rats,rats,NA,561
+2019,Scattered Islands,Juan de Nova,Leaves,Heliotropium forthiarum,4.64,rats,rats,NA,561
+2019,Scattered Islands,Juan de Nova,Leaves,Suriana maritima,9.74,rats,rats,NA,561
+2019,Scattered Islands,Juan de Nova,Leaves,Suriana maritima,10.3,rats,rats,NA,561
+2019,Scattered Islands,Juan de Nova,Leaves,Suriana maritima,9.59,rats,rats,NA,561
+2019,Scattered Islands,Juan de Nova,Leaves,Suriana maritima,10.03,rats,rats,NA,561
+2019,Scattered Islands,Juan de Nova,Leaves,Suriana maritima,7.89,rats,rats,NA,561
+2019,Scattered Islands,Juan de Nova,Macroalgae,Halimeda,4.43,rats,rats,810,561
+2019,Scattered Islands,Juan de Nova,Macroalgae,Halimeda,2.06,rats,rats,810,561
+2019,Scattered Islands,Juan de Nova,Macroalgae,Halimeda,2.7,rats,rats,810,561
+2019,Scattered Islands,Juan de Nova,Macroalgae,Halimeda,2.85,rats,rats,810,561
+2019,Scattered Islands,Juan de Nova,Macroalgae,Halimeda,2.39,rats,rats,810,561
+2019,Scattered Islands,Juan de Nova,Macroalgae,Halimeda,3.38,rats,rats,925,561
+2019,Scattered Islands,Juan de Nova,Macroalgae,Halimeda,3.57,rats,rats,925,561
+2019,Scattered Islands,Juan de Nova,Macroalgae,Halimeda,3.35,rats,rats,925,561
+2019,Scattered Islands,Juan de Nova,Macroalgae,Halimeda,3.15,rats,rats,925,561
+2019,Scattered Islands,Juan de Nova,Macroalgae,Halimeda,3.05,rats,rats,925,561
+2019,Scattered Islands,Juan de Nova,Soil,Soil,13,rats,rats,NA,561
+2019,Scattered Islands,Juan de Nova,Soil,Soil,6.09,rats,rats,NA,561
+2019,Scattered Islands,Juan de Nova,Soil,Soil,3.53,rats,rats,NA,561
+2019,Scattered Islands,Juan de Nova,Soil,Soil,12.84,rats,rats,NA,561
+2019,Scattered Islands,Juan de Nova,Soil,Soil,4.84,rats,rats,NA,561
+2019,Scattered Islands,Juan de Nova,Turf,Turf,2.45,rats,rats,810,561
+2019,Scattered Islands,Juan de Nova,Turf,Turf,2.39,rats,rats,810,561
+2019,Scattered Islands,Juan de Nova,Turf,Turf,1.75,rats,rats,810,561
+2019,Scattered Islands,Juan de Nova,Turf,Turf,3.2,rats,rats,810,561
+2019,Scattered Islands,Juan de Nova,Turf,Turf,3.45,rats,rats,810,561
+2019,Scattered Islands,Juan de Nova,Turf,Turf,2.87,rats,rats,925,561
+2019,Scattered Islands,Juan de Nova,Turf,Turf,3.15,rats,rats,925,561
+2019,Scattered Islands,Juan de Nova,Turf,Turf,1.79,rats,rats,925,561
+2019,Scattered Islands,Juan de Nova,Turf,Turf,3.5,rats,rats,925,561
+2019,Scattered Islands,Tromelin,Fish,Stegastes fasciolatus,10.58,derat,derat,190,97
+2019,Scattered Islands,Tromelin,Fish,Stegastes fasciolatus,10.28,derat,derat,190,97
+2019,Scattered Islands,Tromelin,Fish,Stegastes fasciolatus,10.42,derat,derat,190,97
+2019,Scattered Islands,Tromelin,Fish,Stegastes fasciolatus,10.42,derat,derat,190,97
+2019,Scattered Islands,Tromelin,Fish,Stegastes fasciolatus,10.18,derat,derat,190,97
+2019,Scattered Islands,Tromelin,Fish,Stegastes fasciolatus,10.68,derat,derat,217,97
+2019,Scattered Islands,Tromelin,Fish,Stegastes fasciolatus,10.79,derat,derat,217,97
+2019,Scattered Islands,Tromelin,Fish,Stegastes fasciolatus,10.38,derat,derat,217,97
+2019,Scattered Islands,Tromelin,Fish,Stegastes fasciolatus,10.62,derat,derat,217,97
+2019,Scattered Islands,Tromelin,Fish,Stegastes fasciolatus,10.45,derat,derat,217,97
+2019,Scattered Islands,Tromelin,Fish,Stegastes fasciolatus,9.58,derat,derat,240,97
+2019,Scattered Islands,Tromelin,Fish,Stegastes fasciolatus,9.4,derat,derat,240,97
+2019,Scattered Islands,Tromelin,Fish,Stegastes fasciolatus,9.95,derat,derat,240,97
+2019,Scattered Islands,Tromelin,Fish,Stegastes fasciolatus,9.74,derat,derat,240,97
+2019,Scattered Islands,Tromelin,Fish,Stegastes fasciolatus,9.94,derat,derat,240,97
+2019,Scattered Islands,Tromelin,Leaves,Heliotropium forthiarum,5.62,derat,derat,NA,97
+2019,Scattered Islands,Tromelin,Leaves,Heliotropium forthiarum,7.69,derat,derat,NA,97
+2019,Scattered Islands,Tromelin,Leaves,Heliotropium forthiarum,10.7,derat,derat,NA,97
+2019,Scattered Islands,Tromelin,Leaves,Heliotropium forthiarum,12.46,derat,derat,NA,97
+2019,Scattered Islands,Tromelin,Leaves,Heliotropium forthiarum,12.73,derat,derat,NA,97
+2019,Scattered Islands,Tromelin,Leaves,Heliotropium forthiarum,13.25,derat,derat,NA,97
+2019,Scattered Islands,Tromelin,Leaves,Heliotropium forthiarum,9.86,derat,derat,NA,97
+2019,Scattered Islands,Tromelin,Leaves,Heliotropium forthiarum,11.06,derat,derat,NA,97
+2019,Scattered Islands,Tromelin,Leaves,Heliotropium forthiarum,10.95,derat,derat,NA,97
+2019,Scattered Islands,Tromelin,Leaves,Heliotropium forthiarum,13.07,derat,derat,NA,97
+2019,Scattered Islands,Tromelin,Macroalgae,Halimeda,3.3,derat,derat,190,97
+2019,Scattered Islands,Tromelin,Macroalgae,Halimeda,4.94,derat,derat,190,97
+2019,Scattered Islands,Tromelin,Macroalgae,Halimeda,5.38,derat,derat,190,97
+2019,Scattered Islands,Tromelin,Macroalgae,Halimeda,5.33,derat,derat,190,97
+2019,Scattered Islands,Tromelin,Macroalgae,Halimeda,3.66,derat,derat,190,97
+2019,Scattered Islands,Tromelin,Macroalgae,Halimeda,5.19,derat,derat,217,97
+2019,Scattered Islands,Tromelin,Macroalgae,Halimeda,4.38,derat,derat,217,97
+2019,Scattered Islands,Tromelin,Macroalgae,Halimeda,4.56,derat,derat,217,97
+2019,Scattered Islands,Tromelin,Macroalgae,Halimeda,4.04,derat,derat,217,97
+2019,Scattered Islands,Tromelin,Macroalgae,Halimeda,4.36,derat,derat,217,97
+2019,Scattered Islands,Tromelin,Macroalgae,Halimeda,5.51,derat,derat,240,97
+2019,Scattered Islands,Tromelin,Macroalgae,Halimeda,5.94,derat,derat,240,97
+2019,Scattered Islands,Tromelin,Macroalgae,Halimeda,4.83,derat,derat,240,97
+2019,Scattered Islands,Tromelin,Macroalgae,Halimeda,4.08,derat,derat,240,97
+2019,Scattered Islands,Tromelin,Macroalgae,Halimeda,5.62,derat,derat,240,97
+2019,Scattered Islands,Tromelin,Soil,Soil,14.95,derat,derat,NA,97
+2019,Scattered Islands,Tromelin,Soil,Soil,15.1,derat,derat,NA,97
+2019,Scattered Islands,Tromelin,Soil,Soil,17.3,derat,derat,NA,97
+2019,Scattered Islands,Tromelin,Soil,Soil,13.46,derat,derat,NA,97
+2019,Scattered Islands,Tromelin,Soil,Soil,16.3,derat,derat,NA,97
+2019,Scattered Islands,Tromelin,Turf,Turf,5.7,derat,derat,190,97
+2019,Scattered Islands,Tromelin,Turf,Turf,7.56,derat,derat,190,97
+2019,Scattered Islands,Tromelin,Turf,Turf,5.27,derat,derat,190,97
+2019,Scattered Islands,Tromelin,Turf,Turf,5.68,derat,derat,190,97
+2019,Scattered Islands,Tromelin,Turf,Turf,6.06,derat,derat,190,97
+2019,Scattered Islands,Tromelin,Turf,Turf,5.62,derat,derat,217,97
+2019,Scattered Islands,Tromelin,Turf,Turf,5.94,derat,derat,217,97
+2019,Scattered Islands,Tromelin,Turf,Turf,5.65,derat,derat,217,97
+2019,Scattered Islands,Tromelin,Turf,Turf,4.5,derat,derat,217,97
+2019,Scattered Islands,Tromelin,Turf,Turf,5.16,derat,derat,217,97
+2019,Scattered Islands,Tromelin,Turf,Turf,5.02,derat,derat,240,97
+2019,Scattered Islands,Tromelin,Turf,Turf,5.44,derat,derat,240,97
+2019,Scattered Islands,Tromelin,Turf,Turf,5.22,derat,derat,240,97
+2019,Scattered Islands,Tromelin,Turf,Turf,4.92,derat,derat,240,97
+2019,Scattered Islands,Tromelin,Turf,Turf,5.51,derat,derat,240,97
