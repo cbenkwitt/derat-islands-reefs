@@ -864,7 +864,7 @@ Fish_box_ch
 ```
 
 
-##and combine with separate for each regin
+##and combine with separate for each region
 ```{r}
 
 N15_all_plots_h2_region <-

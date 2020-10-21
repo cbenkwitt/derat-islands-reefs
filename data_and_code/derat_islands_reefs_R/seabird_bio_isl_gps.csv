@@ -1,21 +1,21 @@
 Region,Island,rat_status,sum_bio_kg,Longitude,Latitude
-Chagos Archipelago,Eagle Island,infested,0.08216,71.33818,-6.18665
-Chagos Archipelago,Grande Ile Coquillage,absent,152.16411,71.96729,-5.37241
-Chagos Archipelago,Grande Ile Mapou,infested,0.6965,71.75596,-5.2663
-Chagos Archipelago,Ile Anglaise_PB,infested,0.48667,71.75704,-5.43921
-Chagos Archipelago,Ile Anglaise_SAL,infested,0.08287,72.22462,-5.32822
-Chagos Archipelago,Ile de la Passe,absent,3.09596,72.25172,-5.30566
-Chagos Archipelago,Ile Fouquet,infested,0.59391,72.26199,-5.34301
-Chagos Archipelago,Ile Jacobin,eradicated,0.5575,72.245277,-5.348954
-Chagos Archipelago,Ile Longue,absent,183.04062,71.86643,-5.27221
-Chagos Archipelago,Ile Poule,infested,0.01831,71.75511,-5.41362
-Chagos Archipelago,Ile Sepulture,infested,0.5885,72.253318,-5.347311
-Chagos Archipelago,Ile Vache Marine,eradicated,0.38857,71.82738,-5.42381
-Chagos Archipelago,Middle Brother,absent,359.702,71.51846,-6.15204
-Chagos Archipelago,Nelson's Island,absent,58.94432,72.31441,-5.68447
-Chagos Archipelago,South Brother,absent,96.73326,71.5437,-6.16904
-Scattered Islands,Europa,infested,43.78002,40.33859,-22.34048
+Chagos Archipelago,Eagle Island,infested,0.17234,71.33818,-6.18665
+Chagos Archipelago,Grande Ile Coquillage,absent,319.17595,71.96729,-5.37241
+Chagos Archipelago,Grande Ile Mapou,infested,1.447,71.75596,-5.2663
+Chagos Archipelago,Ile Anglaise_PB,infested,0.99,71.75704,-5.43921
+Chagos Archipelago,Ile Anglaise_SAL,infested,0.17034,72.22462,-5.32822
+Chagos Archipelago,Ile de la Passe,absent,6.32446,72.25172,-5.30566
+Chagos Archipelago,Ile Fouquet,infested,1.24635,72.26199,-5.34301
+Chagos Archipelago,Ile Jacobin,eradicated,1.185,72.245277,-5.348954
+Chagos Archipelago,Ile Longue,absent,381.03777,71.86643,-5.27221
+Chagos Archipelago,Ile Poule,infested,0.0388,71.75511,-5.41362
+Chagos Archipelago,Ile Sepulture,infested,1.282,72.253318,-5.347311
+Chagos Archipelago,Ile Vache Marine,eradicated,0.74667,71.82738,-5.42381
+Chagos Archipelago,Middle Brother,absent,749.67267,71.51846,-6.15204
+Chagos Archipelago,Nelson's Island,absent,124.97123,72.31441,-5.68447
+Chagos Archipelago,South Brother,absent,197.57188,71.5437,-6.16904
+Scattered Islands,Europa,infested,87.56005,40.33859,-22.34048
 Scattered Islands,Grand Glorieuses,infested,0,47.28127,-11.57939
-Scattered Islands,Juan de nova,infested,267.44281,42.72759,-17.03945
-Scattered Islands,Lys,eradicated,620.85267,47.37094,-11.51793
-Scattered Islands,Tromelin,eradicated,32.33684,54.52002,-15.88465
+Scattered Islands,Juan de nova,infested,534.88562,42.72759,-17.03945
+Scattered Islands,Lys,eradicated,1241.70533,47.37094,-11.51793
+Scattered Islands,Tromelin,eradicated,64.67368,54.52002,-15.88465

@@ -56,12 +56,12 @@ range(sb_bio_fam$lbio3)
 
 sb_heat_plot<-
 sb_bio_fam  %>%
-  ungroup(Island) %>%
+  ungroup() %>%
   mutate(Island = fct_relevel(Island, "Lys" , "Tromelin" , "Juan de nova",  "Europa", "Grand Glorieuses", "Nelson's Island",  "Middle Brother" ,  "South Brother", "Grande Ile Coquillage",  "Ile Longue",  "Ile de la Passe", "Ile Vache Marine" , "Ile Jacobin")) %>%
   ggplot(aes(fill=lbio3, y=Family, x=Island)) + 
  #   facet_wrap(~Region, scales="free")+
   geom_tile() + 
-  scale_fill_viridis(limits = c(-6.9, 7), breaks = c(-6.9,-4.6,-2.3, 0, 2.3, 4.6, 6.908), 
+  scale_fill_viridis(limits = c(-6.9, 7.1), breaks = c(-6.9,-4.6,-2.3, 0, 2.3, 4.6, 6.908), 
                         labels = c(0.001, 0.01, 0.1, 1, 10, 100, 1000))+  ###log scale, limits makes it so anything with count = 0 is now gray
   theme_bw()+
   scale_x_discrete(labels = c("Ile du Lys" , "Tromelin" , "Juan de nova",  "Europa", "Grand Glorieuses", "Nelson's Island",  "Middle Brother" ,  "South Brother", "Grande Ile Coquillage",  "Ile Longue",  "Ile de la Passe (Sal)", "Ile Vache Marine" , "Ile Jacobin", "Eagle Island", "Grande Ile Mapou", "Ile Angliase (PB)", "Ile Anglaise (Sal)", "Ile Fouquet", "Ile Poule", "Ile Sepulture")) +
@@ -79,6 +79,7 @@ sb_bio_fam  %>%
 sb_heat_plot
 
 
+
 ```
 
 
@@ -86,6 +87,8 @@ sb_heat_plot
 ```{r}
 ##use log because diagnostics  for non-log models look BAD
 ###log data (adding 0.001 - one order of magnitude less than lowest value)
+range(sb_bio_isl$sum_bio_kg[sb_bio_isl$sum_bio_kg!=0]) #non-zero range =  0.03881 1241.70533
+
 sb_bio_isl <-
 sb_bio_isl %>% 
   ungroup() %>% 
@@ -94,7 +97,7 @@ sb_bio_isl %>%
 #see min, max, mean
 sb_bio_isl %>% 
   ungroup() %>% 
-  summarise(min(lbio3), max(lbio3), mean(lbio3)) #-6.907755	6.431095	1.285131		
+  summarise(min(lbio3), max(lbio3), mean(lbio3)) #-6.907755	7.124242	1.969911	
 
 
 #run model and check diagnostics
@@ -102,7 +105,7 @@ seabird_bio_mod <-
   brm(data = sb_bio_isl, family = gaussian,
       lbio3  ~ 0 + rat_status   + (1|Region),
       iter = 3000, warmup = 1000, chains = 4, cores = 4,
-      prior=c(prior(normal(1.3, 5), class = "b")), #weakly informative
+      prior=c(prior(normal(1.9, 5), class = "b")), #weakly informative
      control = list(adapt_delta = 0.999, max_treedepth = 15), 
       sample_prior="yes",
       file = "seabird_bio_mod")
@@ -119,22 +122,76 @@ hypothesis(seabird_bio_mod, c("rat_statusabsent > rat_statuseradicated", ###0.93
 plot(hypothesis(seabird_bio_mod, c("rat_statusabsent > rat_statuseradicated",
                               "rat_statuseradicated > rat_statusinfested", 
                               "rat_statusabsent > rat_statusinfested"))) 
-
-
-#extract posterior samples and highest posterior density intervals
-post_sb<-posterior_samples(seabird_bio_mod)
-post_sb %>%
-median_hdi(b_rat_statusabsent, b_rat_statusinfested, b_rat_statuseradicated)
-
-
-#exponentiate to put on original scale:
-exp(median_hdi(post_sb$b_rat_statusabsent)[,1:3])
-exp(median_hdi(post_sb$b_rat_statusinfested)[,1:3])
-exp(median_hdi(post_sb$b_rat_statuseradicated)[,1:3])
-#wide intervals, but clear trend of rat absent > rat eradicated > rat infested
-
 ```
 
+####Plot hypothesis results with multiple HPDIs (similar to N15 plots)
+```{r}
+#95% CI's
+hyp_test_sb_95<-hypothesis(seabird_bio_mod, c("rat_statusabsent > rat_statusinfested", 
+                          "rat_statuseradicated > rat_statusinfested", 
+                          "rat_statusabsent > rat_statuseradicated"), alpha = .05)
+
+hyp_test_sb_95_df<-as.data.frame(hyp_test_sb_95$hypothesis)
+hyp_test_sb_95_df$level<-as.integer(95)
+
+
+####now add 75% ci:
+hyp_test_sb_75<-hypothesis(seabird_bio_mod, c("rat_statusabsent > rat_statusinfested", 
+                          "rat_statuseradicated > rat_statusinfested", 
+                          "rat_statusabsent > rat_statuseradicated"),  alpha = .25)
+
+
+hyp_test_sb_75_df<-as.data.frame(hyp_test_sb_75$hypothesis)
+hyp_test_sb_75_df$level<-as.integer(75)
+
+
+hyp_test_sb_df<-
+  rbind(hyp_test_sb_95_df, hyp_test_sb_75_df)
+
+
+hyp_test_sb_df$Test<-c("Never_rats>Rats", "Derat>Rats",  "Never_rats>Derat")
+
+###horizontal plot
+
+#check colours:
+library(RColorBrewer)
+display.brewer.pal(n = 8, name = 'Set2')
+brewer.pal(n = 8, name = "Set2")
+
+relevel_hyp<-
+    hyp_test_sb_df %>% 
+  mutate(Test = fct_relevel(Test, "Never_rats>Derat" , "Derat>Rats", "Never_rats>Rats"))
+
+ 
+sb_mod_plot<-
+  relevel_hyp%>% 
+  ggplot(aes(x=Test, colour=Test, alpha = 0.9)) +
+   geom_point(aes(y = Estimate), size = 3, position=position_dodge(width=.4)) + #not sure what this does: , stat="identity"
+    geom_errorbar(data=filter(relevel_hyp, level==95), aes(ymin = CI.Lower, ymax = CI.Upper), width=0, size=1, position=position_dodge(width=.4) ) +
+      geom_errorbar(data=filter(relevel_hyp, level==75),aes(ymin = CI.Lower, ymax = CI.Upper), width=0, size=2, position=position_dodge(width=.4) ) +
+  geom_hline(yintercept=0, lty=2) + 
+  #scale_color_brewer(palette = "Set2",  labels = c("rats absent -  eradicated" , "rats eradicated -  present", "rats absent -  present"))+ #change colour so to match Fig. 2:
+  scale_color_manual(values = c("#8DA0CB", "#FC8D62", "#66C2A5"), labels = c("rats absent -  eradicated" , "rats eradicated -  present", "rats absent -  present"))+
+    scale_x_discrete(labels = c("rats absent - \nrats eradicated",  "rats eradicated -\nrats present   ", "rats absent -\nrats present "))+ #expand = expansion(add = c(10,10)), 
+  xlab("")+
+  ylab("Estimated difference in log seabird biomass (kg/ha)") + 
+   coord_flip()+
+ # ggtitle("E)")+
+    theme_bw() + 
+  guides(alpha = FALSE)+ ##remove alpha from legend
+   theme(panel.grid.major = element_blank(), # remove gridlines
+        panel.grid.minor = element_blank(), #remove gridlines
+        strip.background = element_blank(),
+               legend.background=element_blank(),
+       legend.box.background = element_rect(colour = "black"), #element_blank() 
+         legend.title=element_blank(),
+        axis.text = element_text(color = "black", size = 10),
+       legend.text= element_text(color = "black", size = 10),
+       plot.title = element_text(color = "black", size = 10),
+        legend.position = 'none') ##most previous x = 0.7
+  sb_mod_plot
+
+```
 
 ##MAKE MAP - All and SI
 ```{r}
@@ -157,7 +214,7 @@ all_map2<-ggplot() +
                  clip = "on") +
     geom_point(data = sb_gps, aes(x = Longitude, y = Latitude, alpha = .9,  fill = lbio3, shape = rat_status), size = 4)+ #, size = 3
   scale_shape_manual(values=c(21,22,24))+
-  scale_fill_viridis(limits=c(-6.9,7), breaks = c(-6.9,-4.6,-2.3, 0, 2.3, 4.6, 6.908), 
+  scale_fill_viridis(limits=c(-6.9,7.2), breaks = c(-6.9,-4.6,-2.3, 0, 2.3, 4.6, 6.908), 
                         labels = c(0.001, 0.01, 0.1, 1, 10, 100, 1000))+  
   labs(x = '', y = '') +
     scalebar(x.min = 35, x.max = 80, y.min = -29, y.max = 9, dist = 500, dist_unit = "km", transform=TRUE, model = "WGS84") + ##mins and max are for the PLOT
@@ -182,7 +239,7 @@ si_map2<-ggplot() +
                  clip = "on") +
   geom_point(data = sb_gps, aes(x = Longitude, y = Latitude, alpha = .9,  fill = lbio3, shape = rat_status), size = 4)+ #, size = 3
   scale_shape_manual(values=c(21,22,24))+
-  scale_fill_viridis(limits=c(-6.9,7), breaks = c(-6.9,-4.6,-2.3, 0, 2.3, 4.6, 6.908), 
+  scale_fill_viridis(limits=c(-6.9,7.2), breaks = c(-6.9,-4.6,-2.3, 0, 2.3, 4.6, 6.908), 
                         labels = c(0.001, 0.01, 0.1, 1, 10, 100, 1000))+  
   labs(x = '', y = '') +
     scalebar(x.min = 40, x.max = 56, y.min = -24, y.max = -11, dist = 250, dist_unit = "km", transform=TRUE, model = "WGS84") + 
@@ -233,21 +290,24 @@ chagos.lagoon<-chashp[chashp@data$L4_ATTRIB %in% c('drowned lagoon', 'drowned in
 
 
 ####draw map:
+
 ch_map2<-ggplot() + 
   geom_polygon(data = chagos.land, aes(x = long, y = lat, group=group), fill='grey', col='black') + 
   geom_polygon(data = chagos.drowned, aes(x = long, y = lat, group=group),fill='grey') + 
+# geom_polygon(data = chagos.lagoon, aes(x = long, y = lat, group=group),fill='white') + 
     geom_point(data = sb_gps, aes(x = Longitude, y = Latitude, alpha = .9,  fill = lbio3, shape = rat_status), size = 4)+ #
   scale_shape_manual(values=c(21,22,24))+
-  scale_fill_viridis(limits=c(-7,7), breaks = c(-6.9,-4.6,-2.3, 0, 2.3, 4.6, 6.908), 
+  scale_fill_viridis(limits=c(-6.9,7.2), breaks = c(-6.9,-4.6,-2.3, 0, 2.3, 4.6, 6.908), 
                         labels = c(0.001, 0.01, 0.1, 1, 10, 100, 1000))+ 
 
-  coord_quickmap(ylim = c(-5.2, -6.48), xlim = c(71.2, 72.7), expand = TRUE,
+  coord_quickmap(ylim = c(-6.48, -5.2), xlim = c(71.2, 72.7), expand = TRUE,
                  clip = "on") + 
   labs(x = '', y = '') +
-    scalebar(x.min = 71.2, x.max = 72.7, y.min = -5.2, y.max = -6.48, dist = 25, dist_unit = "km", transform=TRUE, model = "WGS84") +
-    guides(alpha = FALSE) +
+    scalebar(x.min = 71.2, x.max = 72.7, y.min = -6.48, y.max = -5.2, dist = 25, dist_unit = "km", transform=TRUE, model = "WGS84") +
+ # north(x.min = 72.55, x.max = 72.75, y.min = -6.55, y.max = -6.35, symbol = 12, scale = 1) +
   theme_bw()+
-  theme(
+  theme(#plot.margin=unit(c(0.5,0.5,0.5,0.5), "mm"),
+        legend.position = 'none',
         axis.title=element_blank(),
        # axis.ticks=element_blank(),
         axis.text = element_text(size =10),
@@ -265,23 +325,26 @@ si_map2
 ch_map2
 all_map2
 sb_heat_plot
+sb_mod_plot
 
-all_sb_plot_3 <-
+all_sb_plot <-
   ggdraw() + 
-  draw_plot(all_map2, x = 0, y = .45, width = .33, height = .5) +
-  draw_plot(si_map2, x = .33, y = .45, width = .33, height = .5) +
-  draw_plot(ch_map2, x = .66, y = .45, width = .33, height = .5) +
-  draw_plot(sb_heat_plot,  x = 0, y = 0, width = 1, height = .5) 
-all_sb_plot_3
+  draw_plot(all_map2, x = 0, y = .65, width = .33, height = .35) +
+  draw_plot(si_map2, x = .33, y = .65, width = .33, height = .35) +
+  draw_plot(ch_map2, x = .66, y = .65, width = .33, height = .35) +
+  draw_plot(sb_heat_plot,  x = 0, y = .25, width = 1, height = .4) +
+  draw_plot(sb_mod_plot,  x = 0, y = 0, width = .9, height = .25) 
 
-#ggsave(filename = "seabird_map_allplots_aug19_h3.pdf", 
-#       plot = all_sb_plot_3,
+all_sb_plot
+
+#ggsave(filename = "seabird_map_all_plots.pdf", 
+#      plot = all_sb_plot,
 #      width = 7.3,
-#       height = 7, #h=5
+#       height = 8, #h=5
 #       units = "in",
 #       dpi = 300,
 #       family = "sans",
 #       useDingbats=FALSE)
 
-```
 
+```
