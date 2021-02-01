@@ -14,6 +14,7 @@ library(bayesplot) #mcmc_intervals
 library(cowplot) #for plots
 library(modelr)
 library(viridis) #for colours
+library(loo) #for pareto-k
 
 ##for map:
 library(scales)
@@ -114,6 +115,7 @@ plot(seabird_bio_mod, ask = FALSE)
 pp_check(seabird_bio_mod, nsamples=100) 
 
 
+
 #test for pairwise differences
 hypothesis(seabird_bio_mod, c("rat_statusabsent > rat_statuseradicated", ###0.93
                               "rat_statuseradicated > rat_statusinfested", ###0.91
@@ -122,6 +124,48 @@ hypothesis(seabird_bio_mod, c("rat_statusabsent > rat_statuseradicated", ###0.93
 plot(hypothesis(seabird_bio_mod, c("rat_statusabsent > rat_statuseradicated",
                               "rat_statuseradicated > rat_statusinfested", 
                               "rat_statusabsent > rat_statusinfested"))) 
+
+
+
+#check pareto-k values (leave one out cross validation)
+loo_seabird_bio_mod<-loo(seabird_bio_mod)  
+loo_seabird_bio_mod #found 1 observation with pareto_k > 0.7. The rest are all good. 
+#find which is the problematic observation:
+pareto_k_ids(loo_seabird_bio_mod, threshold = .7) #observation 17 = Grand Glorieuses
+
+#compare model results with versus without Grand Glorieuses:
+sb_bio_isl_nogg<-
+ sb_bio_isl  %>%
+  filter(Island != "Grand Glorieuses") 
+
+
+seabird_bio_mod_oct_nogg <- 
+  brm(data = sb_bio_isl_nogg, family = gaussian,
+      lbio  ~ 0 + rat_status   + (1|Region),
+      iter = 3000, warmup = 1000, chains = 4, cores = 4,
+      prior=c(prior(normal(1.9, 5), class = "b")), #weakly informative
+     control = list(adapt_delta = 0.999, max_treedepth = 15), 
+      sample_prior="yes",
+      file = "seabird_bio_mod_oct_nogg")
+print(seabird_bio_mod_oct_nogg)
+plot(seabird_bio_mod_oct_nogg, ask = FALSE)
+pp_check(seabird_bio_mod_oct_nogg, nsamples=100) 
+
+#check pareto-k values
+loo_seabird_bio_mod_nogg<-loo(seabird_bio_mod_oct_nogg)  
+loo_seabird_bio_mod_nogg ##all values are now okay
+
+
+##check if conclusions are the same:
+print(seabird_bio_mod_oct_nogg)
+print(seabird_bio_mod)
+
+hypothesis(seabird_bio_mod_oct_nogg, c("rat_statusabsent > rat_statuseradicated", 
+                              "rat_statuseradicated > rat_statusinfested", 
+                              "rat_statusabsent > rat_statusinfested"))
+#conclusions match, so all is fine. 
+
+
 ```
 
 ####Plot hypothesis results with multiple HPDIs (similar to N15 plots)

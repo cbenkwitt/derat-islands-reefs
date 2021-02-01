@@ -1,0 +1,104 @@
+---
+title: "R Notebook: nitrogen inputs"
+output: html_notebook
+editor_options: 
+  chunk_output_type: inline
+---
+
+##load packages
+```{r}
+library(tidyverse)
+library(brms)
+library(tidybayes)
+library(bayesplot) #mcmc_intervals
+library(modelr)
+library(loo) #for pareto-k
+
+```
+
+
+##Load files
+```{r}
+sb_n_input_isl<-read.csv("est_n_input.csv")
+str(sb_n_input_isl)
+
+```
+
+
+###Run model - %nitrogen input
+```{r}
+
+#convert to kg/ha and add column for log:
+sb_n_input_isl <-
+  sb_n_input_isl%>% 
+    mutate(sum_n_year_kg = sum_N_year_g_ha/1000,
+           log_sum_n_year_kg = log(sum_n_year_kg+0.001))
+
+
+seabird_n_input_mod <- 
+  brm(data = sb_n_input_isl, family = gaussian,
+      log_sum_n_year_kg  ~ 0 + rat_status   + (1|Region),
+      iter = 3000, warmup = 1000, chains = 4, cores = 4,
+     prior=c(prior(normal(0,10), class = "b")),
+     control = list(adapt_delta = 0.999, max_treedepth = 15), 
+      sample_prior="yes",
+      file = "seabird_n_input_mod")
+print(seabird_n_input_mod) 
+plot(seabird_n_input_mod, ask = FALSE)
+pp_check(seabird_n_input_mod, nsamples=100)
+
+#test for pairwise differences
+hypothesis(seabird_n_input_mod, c("rat_statusabsent > rat_statuseradicated", ###0.93
+                              "rat_statuseradicated > rat_statusinfested", ###0.92
+                              "rat_statusabsent > rat_statusinfested"))  ###1.00
+
+plot(hypothesis(seabird_n_input_mod, c("rat_statusabsent > rat_statuseradicated",
+                              "rat_statuseradicated > rat_statusinfested", 
+                              "rat_statusabsent > rat_statusinfested"))) 
+
+#get estimates:
+median_hdci(exp(posterior_samples(seabird_n_input_mod)))
+
+
+
+#check pareto-k values
+loo_seabird_n_mod<-loo(seabird_n_input_mod)  
+loo_seabird_n_mod #found 1 observation with pareto_k > 0.7. The rest are all good.
+#find which is the problematic observation:
+pareto_k_ids(loo_seabird_n_mod, threshold = .7) #observation 17 = Grande Glorieuse. 
+
+
+##re-run without Grande Glorieuse and check results:
+
+sb_n_input_isl_nogg<-
+  sb_n_input_isl  %>% 
+  filter(Island!="Grand Glorieuses")
+
+seabird_n_input_nogg <- 
+  brm(data = sb_n_input_isl_nogg, family = gaussian,
+      log_sum_n_year_kg  ~ 0 + rat_status   + (1|Region),
+      iter = 3000, warmup = 1000, chains = 4, cores = 4,
+     prior=c(prior(normal(0, 10), class = "b")),
+     control = list(adapt_delta = 0.999, max_treedepth = 15), 
+      sample_prior="yes",
+      file = "seabird_n_input_nogg")
+plot(seabird_n_input_nogg, ask = FALSE)
+pp_check(seabird_n_input_nogg, nsamples=100)
+
+#compare
+print(seabird_n_input_mod) 
+print(seabird_n_input_nogg) 
+
+
+#test for pairwise differences
+hypothesis(seabird_n_input_nogg, c("rat_statusabsent > rat_statuseradicated", 
+                              "rat_statuseradicated > rat_statusinfested",
+                              "rat_statusabsent > rat_statusinfested")) 
+
+##check pareto-k
+loo(seabird_n_input_nogg)  #all good now
+
+#and conclusions match, so all is fine. 
+
+```
+

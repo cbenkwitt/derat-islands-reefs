@@ -50,6 +50,7 @@ print(soil_n15_mod)
 plot(soil_n15_mod, ask = FALSE)
 pp_check(soil_n15_mod) 
 prior_summary(soil_n15_mod)
+loo(soil_n15_mod)
 
 ##plot prior:
 soil_n15_mod %>% 
@@ -103,6 +104,7 @@ print(leaves_n15_mod)
 plot(leaves_n15_mod, ask = FALSE)
 pp_check(leaves_n15_mod) 
 prior_summary(leaves_n15_mod)
+loo(leaves_n15_mod)
 
 plot(hypothesis(leaves_n15_mod, c("Treatment_bnever_rats > Treatment_brats", 
                           "Treatment_bderat > Treatment_brats", 
@@ -151,6 +153,7 @@ print(macro_n15_mod)
 plot(macro_n15_mod, ask = FALSE)
 pp_check(macro_n15_mod) 
 prior_summary(macro_n15_mod)
+loo(macro_n15_mod)
 
 plot(hypothesis(macro_n15_mod, c("Treatment_bnever_rats > Treatment_brats", 
                           "Treatment_bderat > Treatment_brats", 
@@ -194,6 +197,7 @@ print(turf_n15_mod)
 plot(turf_n15_mod, ask = FALSE)
 pp_check(turf_n15_mod) #looks awesome
 prior_summary(turf_n15_mod)
+loo(turf_n15_mod)
 
 plot(hypothesis(turf_n15_mod, c("Treatment_bnever_rats > Treatment_brats", 
                           "Treatment_bderat > Treatment_brats", 
@@ -237,6 +241,7 @@ print(fish_n15_mod)
 plot(fish_n15_mod, ask = FALSE)
 pp_check(fish_n15_mod)
 prior_summary(fish_n15_mod)
+loo(fish_n15_mod)
 
 plot(hypothesis(fish_n15_mod, c("Treatment_bnever_rats > Treatment_brats", 
                           "Treatment_bderat > Treatment_brats", 
@@ -388,185 +393,8 @@ N15_post_plot3
 ```
 
 
-###n15 boxplots
-```{r}
 
-soil_box<-
-  iso_dat_meta %>%
-  filter(Sample_type== "Soil")  %>%
-  droplevels  %>%
-  mutate(Treatment = factor(Treatment, levels = c("never_rats", "derat", "rats")))  %>%
-ggplot(aes(x=Region , y=N15, fill=Treatment, color = Treatment, shape = Treatment)) + 
- geom_boxplot(outlier.size=0, outlier.stroke=0, alpha=0.7) +
-  geom_point(stat="identity", position = position_jitterdodge(dodge.width=.7), alpha = 0.7) + 
-  scale_fill_manual(values = c("#33A02C", "#1F78B4", "#E31A1C" ), labels = c("rats absent", "rats eradicated", "rats present")) +  ###"#A50026", "#FEE090", "#4575B4"   ####"#33A02C", "#1F78B4", "#E31A1C"
-   scale_colour_manual(values = c("#33A02C", "#1F78B4", "#E31A1C" ),labels = c("rats absent", "rats eradicated", "rats present")) +
-  scale_shape_manual(values=c(21, 24, 22), labels = c("rats absent", "rats eradicated", "rats present")) +
-  theme_bw() + 
-  scale_x_discrete(labels = c('Chagos \n Archipelago','Scattered \n Islands'))+
-  ylab(expression(paste(delta, "N"^15))) + 
-  xlab(" ")+
-      ggtitle("A) soil") +
-  theme(panel.grid.major = element_blank(), # remove gridlines
-        panel.grid.minor = element_blank(), #remove gridlines
-        strip.background = element_blank(),
-      #  axis.title.y = element_blank(),
-        legend.position="none",        
-        axis.text = element_text(color = "black", size = 10),
-       legend.text= element_text(color = "black", size = 10),
-       plot.title = element_text(color = "black", size = 10),
-      #  legend.text = element_text(size=12),
-        legend.title=element_blank())#,
-       # text=element_text(size=18))
-soil_box
-
-leaves_box<-
-  iso_dat_meta %>%
-  filter(Sample_type== "Leaves")  %>%
-  droplevels  %>%
-  mutate(Treatment = factor(Treatment, levels = c("never_rats", "derat", "rats")))  %>%
-ggplot(aes(x=Region , y=N15, fill=Treatment, color = Treatment, shape = Treatment)) + 
- geom_boxplot(outlier.size=0, outlier.stroke=0, alpha=0.7) +
-  geom_point(stat="identity", position = position_jitterdodge(dodge.width=.7), alpha = 0.7) + 
-  scale_fill_manual(values = c("#33A02C", "#1F78B4", "#E31A1C" )) +  ###"#A50026", "#FEE090", "#4575B4"   ####"#33A02C", "#1F78B4", "#E31A1C"
-   scale_colour_manual(values = c("#33A02C", "#1F78B4", "#E31A1C" )) +
-  scale_shape_manual(values=c(21, 24, 22)) +
-  theme_bw() + 
-   scale_x_discrete(labels = c('Chagos \n Archipelago','Scattered \n Islands'))+
-  ylab(expression(paste(delta, "N"^15))) + 
-  xlab(" ")+
-    ggtitle("B) leaves") +
-  theme(panel.grid.major = element_blank(), # remove gridlines
-        panel.grid.minor = element_blank(), #remove gridlines
-        strip.background = element_blank(),
-      #  axis.title.y = element_blank(),
-        legend.position="none",
-        axis.text = element_text(color = "black", size = 10),
-       legend.text= element_text(color = "black", size = 10),
-       plot.title = element_text(color = "black", size = 10),
-       legend.title=element_blank())#,
-       # text=element_text(size=18))
-leaves_box
-
-
-macro_box<-
-  iso_dat_meta %>%
-  filter(Sample_type== "Macroalgae")  %>%
-  droplevels  %>%
-  mutate(Treatment = factor(Treatment, levels = c("never_rats", "derat", "rats")))  %>%
-ggplot(aes(x=Region , y=N15, fill=Treatment, color = Treatment, shape = Treatment)) + 
- geom_boxplot(outlier.size=0, outlier.stroke=0, alpha=0.7) +
-  geom_point(stat="identity", position = position_jitterdodge(dodge.width=.7), alpha = 0.7) + 
-  scale_fill_manual(values = c("#33A02C", "#1F78B4", "#E31A1C" )) +  ###"#A50026", "#FEE090", "#4575B4"   ####"#33A02C", "#1F78B4", "#E31A1C"
-   scale_colour_manual(values = c("#33A02C", "#1F78B4", "#E31A1C" )) +
-  scale_shape_manual(values=c(21, 24, 22)) +
-  xlab(" ")+
-  theme_bw() + 
-   scale_x_discrete(labels = c('Chagos \n Archipelago','Scattered \n Islands'))+
-  ylab(expression(paste(delta, "N"^15))) + 
-    ggtitle("C) macroalgae") +
-  theme(panel.grid.major = element_blank(), # remove gridlines
-        panel.grid.minor = element_blank(), #remove gridlines
-        strip.background = element_blank(),
-       # axis.title.y = element_blank(),
-        legend.position="none",
-        axis.text = element_text(color = "black", size = 10),
-       legend.text= element_text(color = "black", size = 10),
-       plot.title = element_text(color = "black", size = 10),
-        legend.title=element_blank())#,
-       # text=element_text(size=18))
-macro_box
-
-turf_box<-
-  iso_dat_meta %>%
-  filter(Sample_type== "Turf")  %>%
-  droplevels  %>%
-  mutate(Treatment = factor(Treatment, levels = c("never_rats", "derat", "rats")))  %>%
-ggplot(aes(x=Region , y=N15, fill=Treatment, color = Treatment, shape = Treatment)) + 
- geom_boxplot(outlier.size=0, outlier.stroke=0, alpha=0.7) +
-  geom_point(stat="identity", position = position_jitterdodge(dodge.width=.7), alpha = 0.7) + 
-  scale_fill_manual(values = c("#33A02C", "#1F78B4", "#E31A1C" )) +  ###"#A50026", "#FEE090", "#4575B4"   ####"#33A02C", "#1F78B4", "#E31A1C"
-   scale_colour_manual(values = c("#33A02C", "#1F78B4", "#E31A1C" )) +
-  scale_shape_manual(values=c(21, 24, 22)) +
-  theme_bw() + 
-   scale_x_discrete(labels = c('Chagos \n Archipelago','Scattered \n Islands'))+
-  ylab(expression(paste(delta, "N"^15))) + 
-  xlab(" ")+
-    ggtitle("D) turf algae") +
-  theme(panel.grid.major = element_blank(), # remove gridlines
-        panel.grid.minor = element_blank(), #remove gridlines
-        strip.background = element_blank(),
-      #  axis.title.y = element_blank(),
-        legend.position="none",
-            axis.text = element_text(color = "black", size = 10),
-       legend.text= element_text(color = "black", size = 10),
-       plot.title = element_text(color = "black", size = 10),
-                legend.title=element_blank())#,
-       # text=element_text(size=18))
-turf_box
-
-
-fish_box<-
-  iso_dat_meta %>%
-  filter(Sample_type== "Fish")  %>%
-  droplevels  %>%
-  mutate(Treatment = factor(Treatment, levels = c("never_rats", "derat", "rats")))  %>%
-ggplot(aes(x=Region , y=N15, fill=Treatment, color = Treatment, shape = Treatment)) + 
- geom_boxplot(outlier.size=0, outlier.stroke=0, alpha=0.7) +
-  geom_point(stat="identity", position = position_jitterdodge(dodge.width=.7), alpha = 0.7) + 
-  scale_fill_manual(values = c("#33A02C", "#1F78B4", "#E31A1C" ), labels = c("rats absent", "rats eradicated", "rats present")) +  ###"#A50026", "#FEE090", "#4575B4"   ####"#33A02C", "#1F78B4", "#E31A1C"
-   scale_colour_manual(values = c("#33A02C", "#1F78B4", "#E31A1C" ),labels = c("rats absent", "rats eradicated", "rats present")) +
-  scale_shape_manual(values=c(21, 24, 22), labels = c("rats absent", "rats eradicated", "rats present")) +
-  theme_bw() + 
-   scale_x_discrete(labels = c('Chagos \n Archipelago','Scattered \n Islands'))+
-  ylab(expression(paste(delta, "N"^15))) + 
-  xlab(" ")+
-  ggtitle("E) fish") +
-  theme(panel.grid.major = element_blank(), # remove gridlines
-        panel.grid.minor = element_blank(), #remove gridlines
-        strip.background = element_blank(),
-       # axis.title.y = element_blank(),
-       legend.position=c(0.29, 0.25),
-       legend.background=element_blank(),
-       legend.box.background = element_rect(colour = "black"),
-      #legend.text = element_text(size=12),
-              axis.text = element_text(color = "black", size = 10),
-       legend.text= element_text(color = "black", size = 10),
-       plot.title = element_text(color = "black", size = 10),
-        legend.title=element_blank())#,
-       # text=element_text(size=18))
-fish_box
-
-```
-
-
-
-###combine plots 
-```{r}
-
-###used for now:
-N15_all_plots <-
-  ggdraw() + 
-  draw_plot(soil_box, x = 0, y = .66, width = .49, height = .33) +
-  draw_plot(leaves_box, x = .5, y = .66, width = .49, height = .33) +
-  draw_plot(macro_box, x = 0, y = .33, width = .49, height = .33) +
-  draw_plot(turf_box, x = .5, y = .33, width = .49, height = .33) +  
-  draw_plot(fish_box, x = 0, y = 0, width = .49, height = .33) +
-  draw_plot(N15_post_plot3, x = 0.5, y = 0, width = .49, height = .33) 
-
-#ggsave(filename = "N15_box_plots2_hpdi_aug19_E.pdf", 
-#       plot = N15_all_plots,
-#       width = 7.3,
-#       height = 10,
-#       units = "in",
-#       dpi = 300,
-#       family = "sans",
-#       useDingbats=FALSE)
-
-```
-
-
-###try seperate boxplots per region:
+###try seperate n15 boxplots per region:
 ```{r}
 
 soil_box_si<-
@@ -920,6 +748,7 @@ print(turf_mod_dist_2)
 plot(turf_mod_dist_2, ask=FALSE)
 pp_check(turf_mod_dist_2)
 prior_summary(turf_mod_dist_2)
+loo(turf_mod_dist_2)
 
 plot(marginal_effects(turf_mod_dist_2), points = TRUE)
 
@@ -1009,6 +838,7 @@ print(macro_mod_dist_3)
 plot(macro_mod_dist_3, ask=FALSE)
 pp_check(macro_mod_dist_3)
 prior_summary(macro_mod_dist_3)
+loo(macro_mod_dist_3)
 
 hypothesis(macro_mod_dist_3, c("Treatment_bderat > Treatment_brats",
                               "Distance_to_shore_km  < 0", ##slope for de-rat islands
@@ -1111,6 +941,7 @@ fish_mod_dist <-
 print(fish_mod_dist) ###0 divergent trans
 plot(fish_mod_dist, ask=FALSE)
 pp_check(fish_mod_dist)
+loo(fish_mod_dist)
 
 hypothesis(fish_mod_dist, c("Treatment_bderat > Treatment_brats",
                               "Distance_to_shore_km  < 0", ##slope for de-rat islands

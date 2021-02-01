@@ -90,6 +90,7 @@ growth_mod_isl_nosp <-
 print(growth_mod_isl_nosp) 
 pp_check(growth_mod_isl_nosp)
 plot(growth_mod_isl_nosp)
+loo(growth_mod_isl_nosp)
 
 
 ```
